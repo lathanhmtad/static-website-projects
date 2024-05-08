@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --warning: yellow;
+    --success: blue;
+    --error: red;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 24px;
+    background-color: #ccc;
+    transition: 0.3s;
+    margin: 0 8px;
+    color: #000;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn--warning {
+    background-color: var(--warning);
+}
+
+.btn--error {
+    background-color: var(--error);
+
+}
+
+.btn--success {
+    background-color: var(--success);
+}
+
+
+.toasts {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+.toast {
+    padding: 12px 16px;
+    background-color: #fff;
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    border-radius: 0;
+    animation: toasts linear 0.2s;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.toast--warning {
+    border-left: 4px solid var(--warning);
+}
+
+.toast--error {
+    border-left: 4px solid var(--error);
+}
+
+.toast--success {
+    border-left: 4px solid var(--success);
+}
+
+.toast p {
+    margin-left: 12px;
+}
+
+.toast i {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--warning);
+}
+
+.toast--warning i {
+    background-color: var(--warning);
+}
+
+.toast--error i {
+    background-color: var(--error);
+}
+
+.toast--success i {
+    background-color: var(--success);
+}
+
+@keyframes toasts {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

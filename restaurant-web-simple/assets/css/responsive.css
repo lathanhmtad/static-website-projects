@@ -1,0 +1,495 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* New PC */
+@media (min-width: 1200px) {
+    
+}
+
+/* Old PC */
+@media (max-width: 1199px) and (min-width: 1024px) {
+
+    .nav>li:hover .subnav-1 {
+        display: block;
+    }
+    
+    .subnav>li:hover>a{
+        color: #ff5200 !important;
+    }
+    
+    .subnav-1>li:hover .subnav-2 {
+        display: block;
+    }
+
+    .banner-content {
+        max-width: 480px;
+    }
+
+    /* Begin: Menu */
+    .foods {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        width: 240px;
+    }
+
+    .sidebar li {
+        width: 210px;
+        padding: 15px 20px;
+    }
+
+    .food-image {
+        width: 290px;
+        height: 162px;
+    }
+
+    .food-product img {
+        width: 290px;
+        height: 162px;
+    }
+
+    .desserts {
+        max-width: 960px;
+    }
+
+    .desserts-product {
+        width: 210px;
+    }
+
+    .desserts-des h3 {
+        width: 92px;
+    }
+    /* End: Menu */
+
+
+    /* Begin: Events */
+    #contain-events img {
+        width: 450px;
+        height: 310px;
+    }
+
+    .birthday-party {
+        max-width: 960px;
+    }
+
+    .events-content {
+        width: 400px;
+    }
+
+    .night-party {
+        max-width: 960px;
+    }
+    /* End: Events */
+
+    .columns {
+        max-width: 960px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 740px) {
+    header .nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 30vw;
+        top: 70px;
+        background-color: #423838;
+    }
+
+    header .nav.show {
+        display: block;
+        animation: fadeIn 0.3s linear;
+    }
+
+    .overlay-mobile-tablet {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+    }
+
+    .overlay-mobile-tablet.show {
+        display: block;
+        animation: fadeIn 0.3s linear;
+    }
+
+    .subnav-1 {
+        display: none;
+        position: relative;
+        padding-left: 25px;
+        width: 100%;
+    }
+
+    .subnav-2 {
+        display: none;
+        position: relative;
+        left: 25px;
+        top: 0;
+    }
+
+    .book-btn {
+        position: relative;
+        left: -35px;
+    }
+
+    .book-btn i {
+        position: absolute;
+        right: -40px;
+        font-size: 35px;
+        top: 5px;
+        color: #fff;
+        display: block;
+    }
+
+    .banner-content h1 {
+        font-size: 50px;
+    }
+
+    /* Begin: Menu */
+
+    .foods {
+        max-width: 540px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .sidebar li {
+        width: 510px;
+    }
+
+    .food-list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .food-image {
+        width: 240px;
+        height: 134px;
+    }
+
+    .food-product img {
+        width: 240px;
+        height: 134px;
+    }
+
+    .desserts {
+        max-width: 540px;
+    }
+
+    .desserts-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .desserts-product {
+        width: 240px;
+        height: 152px;
+        margin-bottom: 24px;
+    }
+    /* End: Menu */
+
+
+    /* Begin: Events */
+    #contain-events img {
+        width: 510px;
+        padding: 0 15px;
+    }
+
+    .birthday-party {
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .night-party {
+        max-width: 540px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .events-content {
+        padding-left: 15px;
+    }
+    /* End: Events */
+
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        max-width: 510px;
+    }
+
+    .columns h3 {
+        margin-bottom: 10px;
+    }
+
+    .col-1, .col-2, .col-3, .col-4 {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .col-1 p {
+        text-align: left;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .overlay-mobile-tablet {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+    }
+
+    .overlay-mobile-tablet.show {
+        display: block;
+        animation: fadeIn 0.3s linear;
+    }
+    
+    header .nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 55vw;
+        top: 70px;
+        background-color: #423838;
+    }
+
+    header .nav.show {
+        display: block;
+        animation: fadeIn 0.3s linear;
+    }
+
+    .subnav-1 {
+        display: none;
+        position: relative;
+        padding-left: 25px;
+        width: 100%;
+    }
+
+    .subnav-2 {
+        display: none;
+        position: relative;
+        left: 25px;
+        top: 0;
+    }
+    
+    header {
+        width: 100vw;
+    }
+
+
+    header .nav {
+        display: none;
+    }
+
+    .book-btn {
+        position: relative;
+        left: -35px;
+    }
+
+    .book-btn i {
+        position: absolute;
+        right: -40px;
+        font-size: 35px;
+        top: 5px;
+        color: #fff;
+        display: block;
+    }
+
+    .banner-content h1 {
+        font-size: 50px;
+    }
+
+    /* Begin: Menu */
+    .foods {
+        max-width: 540px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .sidebar li {
+        width: 100%;
+    }
+
+    .food-list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .food-list h2 {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .flex-food {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-image {
+        width: 240px;
+        height: 134px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .food-product {
+        width: 100%;
+        padding: 0;
+    }
+
+    .food-product img {
+        width: 240px;
+        height: 134px;
+    }
+
+    .food-product p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .food-product span {
+        display: block;
+        text-align: center;
+    }
+
+    .desserts {
+        max-width: 100vw;
+    }
+
+    .desserts-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .desserts-product {
+        width: 45vw;
+        height: 20vh;
+        margin-bottom: 24px;
+    }
+
+    .desserts-product img {
+        width: 10vw;
+    }
+
+    .desserts-des {
+        width: 20vw;
+    }
+
+    .desserts-des h3 {
+        margin-bottom: 15px;
+    }
+    /* End: Menu */
+
+    /* Begin: Events */
+    #contain-events img {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .birthday-party {
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .night-party {
+        max-width: 90vw;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .events-content {
+        width: 90vw;
+    }
+    /* End: Events */
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    .columns h3 {
+        margin-bottom: 10px;
+    }
+
+    .col-1, .col-2, .col-3, .col-4 {
+        width: 100vw;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .col-1 p {
+        text-align: left;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+}
+
+
+
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+
+}
+
+/* Tablet and mobile */
+@media (max-width: 1023px) {
+
+}

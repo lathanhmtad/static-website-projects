@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/baseOfDuy.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/responsiveOfDuy.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="overlay-mobile-tablet"></div>
+            <ul>
+                <li class="logo"><a href="#">Meal<span>.</span></a></li>
+                <li>
+                    <ul class="nav">
+                        <li><a class="active-nav" href="./index.html">Trang chủ</a></li>
+                        <li>
+                            <a class="" href="./menu.html" id="">
+                                Thực đơn 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="subnav-1 subnav">
+                                <li><a href="#">Nguyên liệu</a></li>
+                                <li><a href="#">
+                                    Giá cả
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <ul class="subnav-2 subnav">
+                                        <li><a href="#">Dưới 1 triệu</a></li>
+                                        <li><a href="#">Từ 1 triệu đến 3 triệu</a></li>
+                                        <li><a href="#">Trên 3 triệu</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Yêu thích</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./events.html">Sự kiện</a></li>
+                        <li><a href="#">Thư viện</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li class="book-btn">
+                    <a href="#">Đặt bàn</a>
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+            </ul>
+        </header>
+
+        <div id="banner">
+            <img class="banner-img" src="./assets/imgOfDuy/banner/food.webp" alt="">
+            <section class="content">
+                <h3>Thưởng thức những bữa ăn ngon và lành mạnh</h3>
+                <h1>Tinh hoa ẩm thực</h1>
+                <p>
+                    Ngon như ở nhà <br>
+                    Món ăn gia đình <br>
+                    Thơm ngon đến miếng cuối cùng <br>
+                </p>
+                <div class="btn btn--primary-color">KHÁM PHÁ NGAY</div>
+            </section>
+            <div class="social-networks right-to-left">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="grid wide">
+                <!-- popular-foods -->
+                <section class="popular-foods row">
+                    <div class="col l-4 m-12 c-12 ">
+                        <h3 class="section-subtitle">Chọn bữa ăn của bạn</h3>
+                        <h2 class="section-heading">Thực phẩm Phổ Biến</h2>
+                        <ul class="category">
+                            <li data-fitter="breakfast" class="active">
+                                <img src="./assets/imgOfDuy/foods/category/1.webp" alt="">
+                                Bữa sáng
+                            </li>
+                            <li data-fitter="lunch">
+                                <img src="./assets/imgOfDuy/foods/category/2.webp" alt="">
+                                Bữa trưa
+                            </li>
+                            <li data-fitter="dinner">
+                                <img src="./assets/imgOfDuy/foods/category/3.webp" alt="">
+                                Bữa tối
+                            </li>
+                            <li data-fitter="drinks">
+                                <img src="./assets/imgOfDuy/foods/category/4.webp" alt="">
+                                Đồ uống
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-8 m-12 c-12">
+                        <div class="content">
+                            <div class="head row">  
+                                <div class="col l-6 m-6 c-6">
+                                    <h2 class="meal">Bữa sáng</h2>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <p class="page">1/4</p>
+                                </div>
+                            </div>
+                            <div data-fitter="breakfast" class="product row">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/breakfast/Hamburger.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Hamburger</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/breakfast/Salad.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Salad</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                              
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/breakfast/Sandwich.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Sandwich</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/breakfast/Cereals.webp" alt="">
+                                    </div>
+                                    <p class="product__name">Ngũ cốc</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                 
+                            </div>
+                            <div data-fitter="lunch" class="product hide row">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/lunch/Fried-Cake.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Bánh xèo</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/lunch/Noodle.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Bún bò huế</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                              
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/lunch/Rice.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Cơm tấm</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/lunch/Spaghetti.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Mỳ ý</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                 
+                            </div>
+                            <div data-fitter="dinner" class="product hide row">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/dinner/Big-Soup.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Lẫu</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/dinner/Buffet.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Buffet</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                              
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/dinner/TypeOfSnails.webp" alt="">
+                                    </div>
+                                    <p class="product__name">Ốc</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/dinner/Tokbokki.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Tokbokki</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                 
+                            </div>
+                            <div data-fitter="drinks" class="product hide row">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/drinks/Cocktails.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Cocktails</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/drinks/Juices.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Nước ép</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                              
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/drinks/Red-Wines.png" alt="">
+                                    </div>
+                                    <p class="product__name">Rượu vang</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>  
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="product__img">
+                                        <img src="./assets/imgOfDuy/foods/drinks/Wines.jpg" alt="">
+                                    </div>
+                                    <p class="product__name">Whisky</p>
+                                    <span class="product__price">$19.00</span>
+                                </div>                 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- popular desserts -->
+                <section class="popular-desserts">
+                    <h3 class="section-subtitle">Món tráng miệng</h3>
+                    <h2 class="section-heading">Món tráng miệng phổ biến</h2>
+                    <div class="product-list row grid wide">
+                        <div class="col l-3 m-6 c-6">
+                            <a href="#" class="product-item">
+                                <img src="./assets/imgOfDuy/desserts/1.webp" alt="">
+                                <div class="product-item-desc">
+                                    <h4 class="name">Cherry Muffin</h4>
+                                    <span class="price">$20</span>
+                                </div>
+                            </a>
+                        </div>   
+                        <div class="col l-3 m-6 c-6">
+                            <a href="#" class="product-item">
+                                <img src="./assets/imgOfDuy/desserts/2.webp" alt="">
+                                <div class="product-item-desc">
+                                    <h4 class="name">Rose Muffin</h4>
+                                    <span class="price">$20</span>
+                                </div>
+                            </a>
+                        </div>   
+                        <div class="col l-3 m-6 c-6">
+                            <a href="#" class="product-item">
+                                <img src="./assets/imgOfDuy/desserts/3.webp" alt="">
+                                <div class="product-item-desc">
+                                    <h4 class="name">Bánh Donut</h4>
+                                    <span class="price">$20</span>
+                                </div>
+                            </a>
+                        </div>   
+                        <div class="col l-3 m-6 c-6">
+                            <a href="#" class="product-item">
+                                <img src="./assets/imgOfDuy/desserts/4.webp" alt="">
+                                <div class="product-item-desc">
+                                    <h4 class="name">Bánh Chocolate</h4>
+                                    <span class="price">$20</span>
+                                </div>
+                            </a>
+                        </div>   
+                    </div>
+                </section>
+            </div>
+            
+            <!-- comment -->
+            <section class="comment section-bc-img">
+                <div class="grid wide row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="customers">
+                            <h3 class="section-subtitle">Thử nghiệm</h3>
+                            <h2 class="section-heading">Khách hàng đánh giá</h2>
+                            <div class="assessor">
+                                <div class="author">
+                                    <img src="./assets/imgOfDuy/user/Donald_Trump_official_portrait.jpg.webp" alt="">
+                                    <h3 class="name">Donald trump</h3>
+                                    <p class="work">Cựu tổng thống Mỹ</p>
+                                    <div class="quote">“</div>
+                                </div>
+                                <p class="desc">
+                                    Tôi rất may mắn khi được nghe danh Meal và được ăn trưa ở đó vào ngày đầu tiên mở cửa đón khách trở lại. Đầu tiên, không gian quá đẹp và yên tĩnh. Có cả không gian trong nhà và ngoài trời thoáng mát. Nhưng, đây mới là điểm quan trọng: nhất định phải đến đây để thưởng thức đồ ăn và thức uống. Thực đơn đồ uống thật tuyệt vời - từ các loại trà, sinh tố và thức uống detox. Thức ăn quá ngon, cách trình bày tuyệt vời. Meal rất quan tâm những gì chúng ta tiếp nạp vào cơ thể. Họ hiểu rằng đầu tiên chúng ta cảm nhận bằng thị giác, sau đó là khứu giác, vị giác, cảm giác...! 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="gallery">
+                            <h3 class="section-subtitle">Thư viện</h3>
+                            <h2 class="section-heading">Hình ảnh từ thư viện</h2>
+                            <div class="row gallery-content">
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="gallery-img">
+                                        <img src="./assets/imgOfDuy/foods/breakfast/Hamburger.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="gallery-img">
+                                        <img src="./assets/imgOfDuy/foods/dinner/1.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="gallery-img">
+                                        <img src="./assets/imgOfDuy/foods/lunch/Noodle.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <div class="gallery-img">
+                                        <img src="./assets/imgOfDuy/foods/drinks/Cocktails.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>          
+                            <button class="btn btn--primary-color">XEM NHIỀU HƠN</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="events">
+                <div class="section-content">
+                    <h3 class="section-subtitle">Sự kiện</h3>
+                    <h2 class="section-heading">Thưởng thức các sự kiện từ chúng tôi</h2>
+                </div>
+                <div class="grid wide">
+                    <div class="events-content row">
+                        <div class="col l-6">
+                            <img src="./assets/imgOfDuy/family/1.webp" alt="">
+                        </div>
+                        <div class="col l-6">
+                            <div class="text-content">
+                                <h5>$200.99</h5>
+                                <span>Birthday Party</span>
+                                <p>Tổ chức sự kiện sinh nhật được rất nhiều người quan tâm hiện nay, nhu cầu giao tiếp, tận hưởng cuộc sống cũng như việc quây quần của đại gia đình cũng chính là những lý do sự kiện này được thúc đẩy tổ chức, nhất là sự xuất hiện của những thành viên mới hay sự tri ân đối với những người sinh thành.</p>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i>
+                                        Tổ chức đúng theo yêu cầu, mục đích của khách hàng
+                                    </li>
+                                    <li><i class="fa-solid fa-check"></i>
+                                        Tạo cảm giác ấm cúng, gần gũi
+                                    </li>
+                                    <li><i class="fa-solid fa-check"></i>
+                                        Uy tín, chất lượng
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="order section-bc-img">       
+                <div class="order-container">
+                    <div class="section-content">
+                        <h3 class="section-subtitle">Đặt bàn</h3>
+                        <h2 class="section-heading">Đặt bàn và trải nghiệm ngay bây giờ</h2>
+                        <p class="section-desc">
+                            Hãy đến để trải nghiệm tinh hoa ẩm thực trên thế giới 
+                        </p>
+                        <button class="btn btn--primary-color">ĐẶT BÀN</button>
+                    </div>
+                </div>   
+            </section>
+        </div>
+
+        
+        <footer>
+            <div class="columns">
+                <div class="col-1">
+                    <h3>Meal<span>.</span></h3>
+                    <p>
+                        Meal<span>.</span> là nhà hàng nổi tiếng với sự phục vụ tận tình, món ăn ngon, nguyên liệu sạch. Thực đơn được tạo
+                        nên từ những nhu cầu của thực khách và có thể thay đổi, linh hoạt hằng ngày.
+                    </p>
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class="social-list">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h3>Thông tin</h3>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h3>Liên hệ</h3>
+                    <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                    <ul>
+                        <li><a href="#">+1(234)-567-890</a></li>
+                        <li><a href="#">+0(123)-456-789</a></li>
+                        <li><a href="#">meal.restaurant@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&#169; 2022 Meal. All Rights Reserved | This website is made by <span>Dang Duy</span> & <span>Quang Vinh</span></p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.book-btn i');
+        const navigation = document.querySelector('.nav');
+        const overlay = document.querySelector('.overlay-mobile-tablet');
+
+        const categoryItems = document.querySelectorAll('.category li');
+        const products = document.querySelectorAll('.popular-foods .product');
+        const meal = document.querySelector('.meal');
+        const page = document.querySelector('.page');
+        categoryItems.forEach(categoryItem => categoryItem.addEventListener('click', changeProduct))
+        function changeProduct(e) {
+            categoryItems.forEach(categoryItem => categoryItem.classList.remove('active'));
+            e.target.classList.add('active')
+            
+            let valueFilter = e.target.dataset.fitter;
+            products.forEach((product, index) => {
+                if(product.dataset.fitter === valueFilter) {
+                    meal.textContent = e.target.textContent;
+                    page.textContent = `${index + 1}/4`;
+                    product.classList.remove('hide');
+                }
+                else {
+                    product.classList.add('hide');
+                }
+            })
+        }
+
+        menuButton.onclick = function() {
+            navigation.classList.toggle('show')
+            overlay.classList.toggle('show')
+        }
+    </script>
+</body>
+</html>

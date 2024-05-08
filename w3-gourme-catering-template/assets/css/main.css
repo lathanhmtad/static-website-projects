@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+}
+
+:root {
+    --gray: #ccc;
+    --gray-l: #f1f1f1;
+    --text-color-l: #757575;
+    --text-color-black: #000;
+}
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 0px 24px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.pd-64 {
+    padding: 64px 0;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 5px;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* == Header == */
+#header {
+    --height-header: 54.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height: var(--height-header);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#header .nav {
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+#header .nav:nth-child(2) li {
+    float: left;
+}
+
+#header .nav li a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color-black);
+    padding: 10px 16px;
+    letter-spacing: 4px;
+}
+
+
+#header .nav li a:hover {
+    background-color: var(--gray);
+}
+
+
+/* == Banner == */
+#banner {
+    position: relative;
+    padding-top: 50%;
+    background: url('../img/banner/hamburger.jpg') no-repeat top center / cover;
+}
+
+#banner .heading {
+    position: absolute;
+    font-size: 3.6rem;
+    opacity: 0.6;
+    font-weight: 500;
+    bottom: 10px;
+    padding: 12px 24px;
+}
+
+/* == Content == */
+hr {
+    border-top: 1px solid #fff;
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+
+
+/* about */
+.about-catering .des {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.about .heading {
+    font-size: 3.6rem;
+    margin-bottom: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-catering .text-content {
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.about-catering .text-content:nth-child(even) {
+    color: var(--text-color-l);
+}
+
+.about-catering .seasonal {
+    background-color: var(--gray-l);
+    padding: 2px 8px;
+}
+
+.about-our-menu h3 {
+    font-size: 2rem;
+    margin-top: 35px;
+    font-weight: 400;
+}
+
+.about-our-menu p {
+    font-size: 1.5rem;
+    color: var(--text-color-l);
+    line-height: 2;
+    margin: 10px 0;
+}
+
+/* Contact */
+.contact .heading {
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.contact .info,
+.contact .sub-heading {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.contact .place {
+    margin: 18px 0;
+    font-size: 1.8rem;
+    color: #607d8b;
+}
+
+.contact-form {
+    display: inline-block;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.contact-form .form-control {
+    padding: 16px 8px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+
+}
+
+.contact-btn {
+    color: #000;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 32px;
+    font-size: 1.5rem;
+}
+
+.contact-btn:hover {
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+/* == Footer == */
+#footer {
+    background-color: var(--gray-l);
+    height: 116.5px;
+    text-align: center;
+    line-height: 116.5px;
+    font-size: 1.5rem;
+}
+
+#footer a {
+    text-decoration: underline;
+    color: var(--text-color-black);
+}
+
+#footer a:hover {
+    color: #4CAF50;
+}

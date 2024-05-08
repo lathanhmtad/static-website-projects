@@ -1,0 +1,455 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(180deg, rgba(0,0,0,.5), transparent);
+    z-index: 100;
+    padding: 26px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-duration: 3s;
+}
+
+.header .brand {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 4.8rem;
+}
+
+.nav__list a {
+    font-size: 2rem;
+    margin-left: 28px;
+    letter-spacing: 1px;
+}
+
+.home {
+    padding: 100px 200px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #5496b4;
+}
+
+.home .slide-video {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    clip-path: circle(0.0% at 50% 50%);
+}
+
+.home .slide-video.active {
+    z-index: 1;
+    clip-path: circle(70.7% at 50% 50%);
+    transition: clip-path 0.8s linear;
+}
+
+.home .slide-video.active.full-screen {
+    z-index: 100;
+}
+
+.content {
+    z-index: 20;
+    color: var(--white-color);
+    padding-top: 64px;
+}
+
+.content__title {
+    line-height: 1.4;
+    font-size: 4.8rem;
+    animation-duration: 3s;
+}
+
+.content__title span {
+    display: block;
+    font-size: 7.5rem;
+    margin-bottom: 56px;
+}
+
+.content__desc {
+    margin-bottom: 46px;
+    line-height: 1.4;
+    font-size: 1.8rem;
+    width: 50%;
+    animation-duration: 3s;
+}
+
+.socials {
+    position: absolute;
+    z-index: 10;
+    right: 2%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-duration: 3s;
+}
+
+.socials a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-top: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: rgb(0 0 0 / 35%) 0px 22px 70px 4px;
+    transition-duration: 0.6s;
+    overflow: hidden;
+}
+
+.socials a:hover {
+    cursor: pointer;
+    background-color: var(--blue-color);
+    transform: translateX(-8px)
+}
+
+.socials a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: skewY(45deg) translateY(150px);
+    transition-duration: 0.6s;
+}
+
+.socials a:hover::before {
+    transform: skewY(45deg) translateY(-150px);
+}
+
+.dots-btn {
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    bottom: 9%;
+    display: flex;
+    justify-content: center;
+}
+
+.dot-btn {
+    width: 16px;
+    height: 16px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    margin: 0 12px;
+    transition-duration: 0.5s;
+}
+
+.dot-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: rgb(69 122 191) 0 5px 38px, rgb(69 122 191) 0 0px 28px;
+}
+
+.dot-btn.active {
+    background-color: var(--blue-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        right: 0;
+    }
+}
+
+/* tab func */
+.tab-func {
+    position: fixed;
+    background-color: red;
+    top: 20%;
+    transform: translateY(-50%);
+    right: 2%;
+    width: 60px;
+    height: 60px;
+    background-color: #30261d;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.tab-func i {
+    font-size: 24px;
+    color: var(--white-color);
+    transition-duration: 0.2s;
+}
+
+.tab-func.active i {
+    color: #f3a952;
+    cursor: pointer;
+}
+
+/* control */
+.control {
+    position: fixed;
+    z-index: 200;
+    background-color: #30261d;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 240px;
+    color: var(--white-color);
+    padding: 8px 0;
+    display: none;
+}
+
+.control.show {
+    display: block;
+}
+
+.control-content {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control-content h3 {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .control-btn {
+    width: 36px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    padding: 8px 0;
+} */
+
+/* .switch-btn {
+    position: absolute;
+    z-index: 12;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #ada6a6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    border-radius: 50%;
+    transition-duration: 0.25s;
+    pointer-events: none;
+} */
+
+.control .switch-btn {
+    font-size: 24px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.control .switch-btn:hover {
+    color: #f3a952;
+
+}
+
+.switch-btn.enable {
+
+} 
+
+
+.overlay {
+    position: absolute;
+    top: 112px;
+    left: 0;
+    right: 0;
+    bottom: 68px;
+    z-index: 1;
+}
+
+
+
+
+/* location mark */
+
+.map {
+    position: absolute;
+    width: 100%;
+}
+
+.map > img {
+    position: relative;
+    width: 75%;
+    left: 0;
+    top:0;
+}
+
+.pin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: #89849b;
+    position: absolute;
+    transform: rotate(-45deg);
+    margin: -20px 0 0 -20px;
+    /* animation-name: bounce; */
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    transition: ease-in-out 1s;
+}
+
+.pin:after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin: 8px 0 0 8px;
+    background: #2f2f2f;
+    position: absolute;
+    border-radius: 50%;
+  }
+.pulse {
+    background: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    margin: 11px 0px 0px -12px;
+    transform: rotateX(55deg);
+    transition: ease-in-out 1s;
+}
+
+.pulse:after {
+    content: "";
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: -13px 0 0 -13px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    box-shadow: 0 0 1px 2px #89849b;
+    animation-delay: 1.1s;
+}
+
+.location-icon { 
+    transition: all ease 1s;
+}
+
+.location-icon.hn p {
+    font-size: 24px;
+    padding: 6px 12px;
+    background: brown;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    left: -56%;
+    top: -61px;
+    color: #fff;
+}
+
+.location-icon:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.location-icon.an-giang {
+    position: absolute;
+    top: 77.1%;
+    left: 22.5%;
+}
+.location-icon.ba-ria-vung-tau {
+    position: absolute;
+    top: 76%;
+    left: 36%;
+}
+.location-icon.binh-dinh {
+    position: absolute;
+    top: 55%;
+    left: 47%;
+}
+.location-icon.dong-thap {
+    position: absolute;
+    top: 76%;
+    left: 25.3%;
+}
+.location-icon.hue {
+    position: absolute;
+    top: 43.6%;
+    left: 41.1%;
+}
+.location-icon.khanh-hoa {
+    position: absolute;
+    top: 66%;
+    left: 47.1%;
+}
+.location-icon.kien-giang {
+    position: absolute;
+    top: 81%;
+    left: 22.1%;
+}
+.location-icon.lam-dong {
+    position: absolute;
+    top: 70%;
+    left: 41.1%;
+}
+.location-icon.long-an {
+    position: absolute;
+    top: 75.8%;
+    left: 28.1%;
+}
+.location-icon.ninh-binh {
+    position: absolute;
+    top: 18.3%;
+    left: 27.1%;
+}
+.location-icon.ninh-thuan {
+    position: absolute;
+    top: 70%;
+    left: 46.3%;
+}
+.location-icon.phan-thiet {
+    position: absolute;
+    top: 74%;
+    left: 41.2%;
+}
+.location-icon.phu-yen {
+    position: absolute;
+    top: 62%;
+    left: 48.2%;
+}
+.location-icon.sapa {
+    position: absolute;
+    top: 5%;
+    left: 14.2%;
+}
+.location-icon.tay-nguyen {
+    position: absolute;
+    top: 57%;
+    left: 41.7%;
+}
+.location-icon.ben-tre {
+    position: absolute;
+    top: 78.6%;
+    left: 30.2%;
+}
+.location-icon.tp-hcm {
+    position: absolute;
+    top: 75.1%;
+    left: 31.9%;
+}
+.location-icon.hn {
+    position: absolute;
+    top: 14.1%;
+    left: 25.4%;
+}

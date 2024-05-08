@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-hue: 174;
+    --second-hue: 219;
+    --sat: 63%;
+    --lig: 40%;
+    --black-color: hsl(var(--second-hue), 48%, 8%);
+    --white-color: #fff;
+    --height-header: 64px;
+    --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 60%);
+    --text-color: hsl(var(--second-hue), 8%, 75%);
+    --container-color: hsl(var(--second-hue), 32%, 12%);
+    --text-color-light: hsl(var(--second-hue), 4%, 55%);
+    --section-spacing: 124px;
+    --box-shadow: auto;
+}
+
+
+body.light-theme {
+    --text-color: hsl(var(--second-hue), 8%, 35%);
+    --white-color: hsl(var(--second-hue), 48%, 8%);
+    --black-color: #fff;
+    --container-color: #fff;
+    --box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.17);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+span {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--black-color);
+    transition: 0.4s;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--first-color);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    padding: 12px;
+    font-size: 1.4rem;
+    border: 2px solid var(--first-color);
+    border-radius: 6px;
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--container-color);
+    min-width: 100px;
+    min-height: 50px;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+
+.btn.btn--primary-color {
+    background-color: var(--first-color);
+}
+
+.btn.btn--primary-color:hover {
+    background-color: var(--first-color-alt);
+    border: 2px solid var(--first-color-alt);
+
+}
+
+.btn.btn--transparent-color {
+    background-color: transparent;
+}
+
+.btn.btn--transparent-color:hover {
+    background-color: var(--first-color-alt);
+    color: var(--black-color);
+}
+
+.btn.btn--text-primary-color {
+    color: var(--first-color);
+}
+
+.btn-text {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    color: var(--first-color);
+    justify-content: center;   
+    font-weight: 600;
+}
+
+.btn-text:hover {
+    color: var(--first-color-alt);
+    cursor: pointer;
+}
+
+.btn-text i {
+    margin-left: 2px;
+    transition: 0.5s;
+    font-size: 1.6rem;
+    pointer-events: none;
+}
+
+.btn-text:hover i {
+    transform: translateX(8px);
+}
+
+.section__title {
+    font-size: 2.4rem;
+    color: var(--first-color);
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.section__subtitle {
+    text-align: center;
+    display: block;
+    font-size: 1.3rem;
+    letter-spacing: 0.8px;
+    color: var(--text-color-light);
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-top: 64px;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--first-color-alt);
+}

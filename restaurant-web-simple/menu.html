@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Begin: Header -->
+        <header>
+            <div class="overlay-mobile-tablet"></div>
+            <ul>
+                <li class="logo"><a href="#">Meal<span>.</span></a></li>
+                <li>
+                    <ul class="nav">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li>
+                            <a class="active-nav" href="#" id="">
+                                Thực đơn 
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="subnav-1 subnav">
+                                <li><a href="#">Nguyên liệu</a></li>
+                                <li><a href="#">
+                                    Giá cả
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                    <ul class="subnav-2 subnav">
+                                        <li><a href="#">Dưới 1 triệu</a></li>
+                                        <li><a href="#">Từ 1 triệu đến 3 triệu</a></li>
+                                        <li><a href="#">Trên 3 triệu</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Yêu thích</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./events.html">Sự kiện</a></li>
+                        <li><a href="#">Thư viện</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li class="book-btn">
+                    <a href="#">Đặt bàn</a>
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+            </ul>
+        </header>
+        <!-- End: Header -->
+
+        <!-- Begin: Banner -->
+        <div id="banner">
+            <div class="overlay"></div>
+            <div class="banner-content">
+                <span>Lựa chọn tốt nhất cho những bữa ăn</span>
+                <h1>Thực đơn chính</h1>
+                <p>
+                    Nhiều món ngon cho bạn lựa chọn.<br>Được chế biến bởi những đầu bếp tài giỏi.<br>Vệ sinh an toàn thực phẩm luôn được đặt lên hàng đầu.
+                </p>
+                <a href="#" class="explore-btn">Khám phá ngay</a>
+            </div>
+
+            <div class="social-networks">
+                <a><i class="fa-brands fa-whatsapp"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></i></a>
+                <a><i class="fa-brands fa-facebook-f"></i></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <!-- End: Banner -->
+
+        <!-- Begin: Contain -->
+        <div id="contain-menu">
+
+            <!-- Foods -->
+            <div class="foods">
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <ul>
+                        <li data-filter="breakfast" class="active-sidebar">
+                            <img src="./assets/img/sidebar/breakfast.webp" alt="">
+                            Bữa sáng
+                        </li>
+
+                        <li data-filter="lunch">
+                            <img src="./assets/img/sidebar/lunch.webp" alt="">
+                            Bữa trưa
+                        </li>
+
+                        <li data-filter="dinner">
+                            <img src="./assets/img/sidebar/dinner.webp" alt="">
+                            Bữa tối
+                        </li>
+
+                        <li data-filter="drinks">
+                            <img src="./assets/img/sidebar/drink.webp" alt="">
+                            Đồ uống
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Food-list -->
+                <div class="food-list">
+
+                    <!-- Breakfast -->
+                    <div data-filter="breakfast" class="breakfast-food-list">
+                        <h2>Bữa sáng</h2>
+                        <div class="flex-food">
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/breakfast/Hamburger.jpg" alt="">
+                                </div>
+                                <p>Hamburger</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/breakfast/Salad.jpg" alt="">
+                                </div>
+                                <p>Salad</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/breakfast/Sandwich.jpg" alt="">
+                                </div>
+                                <p>Sandwich</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/breakfast/Cereals.webp" alt="">
+                                </div>
+                                <p>Ngũ cốc</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lunch -->
+                    <div data-filter="lunch" class="lunch-food-list">
+                        <h2>Bữa trưa</h2>
+                        <div class="flex-food">
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/lunch/Fried-Cake.jpg" alt="">
+                                </div>
+                                <p>Bánh xèo</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/lunch/Noodle.jpg" alt="">
+                                </div>
+                                <p>Bún bò Huế</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/lunch/Rice.jpg" alt="">
+                                </div>
+                                <p>Cơm tấm</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/lunch/Spaghetti.jpg" alt="">
+                                </div>
+                                <p>Mì Ý</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dinner -->
+                    <div data-filter="dinner" class="dinner-food-list">
+                        <h2>Bữa tối</h2>
+                        <div class="flex-food">
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/dinner/Big-Soup.jpg" alt="">
+                                </div>
+                                <p>Lẩu</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/dinner/Buffet.jpg" alt="">
+                                </div>
+                                <p>Buffet</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/dinner/Tokbokki.jpg" alt="">
+                                </div>
+                                <p>Tokbokki</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/dinner/TypeOfSnails.webp" alt="">
+                                </div>
+                                <p>Ốc</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drinks -->
+                    <div data-filter="drinks" class="drinks-list">
+                        <h2>Đồ uống</h2>
+                        <div class="flex-food">
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/drinks/Cocktails.jpg" alt="">
+                                </div>
+                                <p>Cocktail</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/drinks/Juices.jpg" alt="">
+                                </div>
+                                <p>Nước ép</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/drinks/Red-Wines.png" alt="">
+                                </div>
+                                <p>Rượu vang</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+    
+                            <div class="food-product">
+                                <div class="food-image">
+                                    <img src="./assets/img/drinks/Wines.jpg" alt="">
+                                </div>
+                                <p>Whisky</p>
+                                <span>&#36; 19.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="desserts">
+                <span>Món tráng miệng</span>
+                <h3><span>Best-sellers</span></h3>
+
+                <!-- Desserts-list -->
+                <div class="desserts-list">
+                    <div class="desserts-product">
+                        <img src="./assets/img/desserts/desserts-1.webp" alt="">
+                        <div class="desserts-des">
+                            <h3>Cherry Muffin</h3>
+                            <span>&#36; 20</span>
+                        </div>
+                    </div>
+
+                    <div class="desserts-product">
+                        <img src="./assets/img/desserts/desserts-2.webp" alt="">
+                        <div class="desserts-des">
+                            <h3>Rose Muffin</h3>
+                            <span>&#36; 20</span>
+                        </div>
+                    </div>
+
+                    <div class="desserts-product">
+                        <img src="./assets/img/desserts/desserts-3.webp" alt="">
+                        <div class="desserts-des">
+                            <h3>Bánh Donut</h3>
+                            <span>&#36; 20</span>
+                        </div>
+                    </div>
+
+                    <div class="desserts-product">
+                        <img src="./assets/img/desserts/desserts-4.webp" alt="">
+                        <div class="desserts-des">
+                            <h3>Bánh Chocolate</h3>
+                            <span>&#36; 20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Contain -->
+
+        <!-- Begin: Footer -->
+        <footer>
+            <div class="columns">
+                <div class="col-1">
+                    <h3>Meal<span>.</span></h3>
+                    <p>
+                        Meal<span>.</span> là nhà hàng nổi tiếng với sự phục vụ tận tình, món ăn ngon, nguyên liệu sạch. Thực đơn được tạo
+                        nên từ những nhu cầu của thực khách và có thể thay đổi, linh hoạt hằng ngày.
+                    </p>
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class="social-list">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h3>Thông tin</h3>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h3>Liên hệ</h3>
+                    <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                    <ul>
+                        <li><a href="#">+1(234)-567-890</a></li>
+                        <li><a href="#">+0(123)-456-789</a></li>
+                        <li><a href="#">meal.restaurant@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&#169; 2022 Meal. All Rights Reserved | This website is made by <span>Dang Duy</span> & <span>Quang Vinh</span></p>
+            </div>
+        </footer>
+        <!-- End: Footer -->
+    </div>
+    <script>
+        const menuButton = document.querySelector('.book-btn i');
+        const navigation = document.querySelector('.nav');
+        const overlay = document.querySelector('.overlay-mobile-tablet');
+
+        const categoryItems = document.querySelectorAll('.sidebar ul li');
+
+        const breakfastFoodList = document.querySelector('.breakfast-food-list');
+        const lunchFoodList = document.querySelector('.lunch-food-list');
+        const dinnerFoodList = document.querySelector('.dinner-food-list');
+        const drinksList = document.querySelector('.drinks-list');
+
+
+        for(let i = 0; i < categoryItems.length; i++) {
+            categoryItems[i].onclick = changeFoodList
+        }
+
+        function changeFoodList(e) {
+            for(let i = 0; i < categoryItems.length; i++) {
+                categoryItems[i].classList.remove('active-sidebar');
+            }
+            e.target.classList.add('active-sidebar');
+
+            let valueFilter = e.target.getAttribute('data-filter');
+
+            if(breakfastFoodList.getAttribute('data-filter') === valueFilter) {
+                breakfastFoodList.style.display = 'block';
+
+                lunchFoodList.style.display = 'none';
+                dinnerFoodList.style.display = 'none';
+                drinksList.style.display = 'none';
+            }
+            else if(lunchFoodList.getAttribute('data-filter') === valueFilter) {
+                lunchFoodList.style.display = 'block';
+
+                breakfastFoodList.style.display = 'none';
+                dinnerFoodList.style.display = 'none';
+                drinksList.style.display = 'none';
+            }
+            else if(dinnerFoodList.getAttribute('data-filter') === valueFilter) {
+                dinnerFoodList.style.display = 'block';
+
+                lunchFoodList.style.display = 'none';
+                breakfastFoodList.style.display = 'none';
+                drinksList.style.display = 'none';
+            }
+            else if(drinksList.getAttribute('data-filter') === valueFilter) {
+                drinksList.style.display = 'block';
+
+                dinnerFoodList.style.display = 'none';
+                lunchFoodList.style.display = 'none';
+                breakfastFoodList.style.display = 'none';
+            }
+
+        }
+
+        menuButton.onclick = function() {
+            navigation.classList.toggle('show')
+            overlay.classList.toggle('show')
+        }
+    </script>
+</body>
+</html>

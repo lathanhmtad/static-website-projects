@@ -1,0 +1,38 @@
+/* Tablet and mobile */
+@media (max-width: 1023px) {
+    #header .nav {
+        padding: 8px;
+    }
+
+    #content .content-section {
+        padding: 58px 32px 0;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .m-col-half {
+        width: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .s-col-full {
+        width: 100%;
+    }
+
+    .about .text-body .btn {
+        padding: 16px;
+    }
+
+    #header .nav:nth-child(2) {
+        display: none;
+    }
+
+    #banner .text span:nth-child(2) {
+        display: none;
+    }
+}

@@ -1,0 +1,378 @@
+/* === content === */
+#content {
+    position: relative;
+    bottom: var(--height-header);
+    background-color: var(--pink-color);
+    padding-top: 100px;
+}
+
+/* == popular-foods == */
+
+/* category */
+.category {
+    margin-top: 24px;
+}
+
+.category li {
+    padding: 16px 20px;
+    font-size: 2rem;
+    width: 255px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+    border-radius: 30px;
+}
+
+.category li.active {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.category li img {
+    width: 26px;
+    margin-right: 24px;
+    pointer-events: none;
+}
+
+/* content */
+.popular-foods .content .head {
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.popular-foods .content .meal {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.popular-foods .content .page {
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+.popular-foods .food-description {
+    overflow: hidden;
+}
+
+.popular-foods .product {
+    flex-wrap: nowrap;
+    transition-duration: 0.5s;
+    margin-bottom: 24px;
+}
+
+.popular-foods .product .col.l-6 {
+    min-width: 50%;
+}
+
+.popular-foods .product__img {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.popular-foods .product__img img {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.popular-foods .product__img img:hover {
+    transform: scale(1.1);
+}
+
+.popular-foods .product__name {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin: 16px 0 8px;
+    font-weight: 600;
+}
+
+.popular-foods .product__price {
+    font-size: 1.6rem;
+    display: block;
+    color: var(--primary-color);
+}
+
+
+/* == popular-desserts == */
+.popular-desserts {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.popular-desserts .product-item {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    min-height: 158px;
+    padding: 24px 20px;
+    width: 100%;
+    transition-duration: 0.25s;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.popular-desserts .product-item:hover {
+    background-color: var(--white-color);
+}
+
+.popular-desserts .product-item img {
+    width: 60px;
+}
+
+.popular-desserts .product-item-desc {
+    font-size: 2rem;
+    margin-left: 16px;
+}
+
+.popular-desserts .product-item-desc .name {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.popular-desserts .product-item-desc .price {
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+
+/* == comment == */
+.comment {
+    padding: 100px 0;
+}
+
+.customers {
+    position: relative;
+}
+
+.assessor-container {
+    overflow: hidden;
+    width: 455px;
+}
+
+.assessor-inner {
+    display: flex;
+    transition-duration: 0.8s;
+}
+
+.assessor {
+    margin-top: 48px;
+    flex: 0 0 100%;
+    color: var(--text-color);
+}
+
+.assessor .author {
+    margin-bottom: 48px;
+}
+
+.assessor .author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.assessor .author h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.assessor .author .work {
+    font-size: 1.4rem;
+} 
+
+.assessor .author .quote {
+    position: relative;
+    font-size: 7rem;
+    line-height: 0;
+    top: 40px;
+} 
+
+.assessor .desc {
+    font-size: 1.6rem;
+    width: 455px;
+    line-height: 1.6;
+}
+
+/* gallery */
+.gallery {
+    position: relative;
+}
+
+.gallery-content {
+    margin-top: 48px;
+}
+
+.gallery-img {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition-duration: 0.25s;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 300;
+    transform: scale(0.5);
+    pointer-events: none;
+    opacity: 0;
+    transition-duration: 0.25s;
+}
+
+.lightbox.show {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    font-size: 6rem;
+    right: 40px;
+    z-index: 350;
+    color: var(--white-color);
+    transition-duration: 0.25s;
+}
+
+.lightbox-close:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.lightbox-content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.lightbox img {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    height: 280px;
+}
+
+.lightbox-next,
+.lightbox-prev {
+    color: var(--white-color);
+    font-size: 2rem;
+    margin: 0 10px;
+    padding: 12px 18px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-next {
+    right: 0;
+}
+
+.lightbox-prev {
+    left: 0;
+}
+
+.lightbox-next:hover,
+.lightbox-prev:hover {
+    color: var(--primary-color);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* == events == */
+.events {
+    padding: 100px 0;
+}
+
+.events .dots {
+    width: 100%;
+    justify-content: center;
+    transform: translateX(4.5%);
+}
+
+.events-container {
+    overflow: hidden;
+    margin: 0 12px;
+}
+
+.events-content {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.events-inner {
+    display: flex;
+    transition-duration: 0.8s;
+}
+
+.events-content img {
+    max-width: 540px;
+    width: 100%;
+}
+
+.events-content .text-content {
+    font-size: 1.6rem;
+    margin-left: 120px;
+}
+
+.events-content .text-content h5 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    height: 48px;
+}
+
+.events-content .text-content span {
+    display: block;
+    font-size: 2.8rem;
+    color: var(--text-color);
+}
+
+.events-content .text-content p {
+    line-height: 1.6;
+    margin: 24px 0;
+    width: 445px;
+}
+
+.events-content .text-content ul li {
+    line-height: 2;
+}
+
+.events-content .text-content ul li i {
+    margin-right: 14px;
+}
+
+
+/* == order == */
+.order {
+    padding: 100px 0;
+}
+
+.order-container {
+    position: relative;
+}
+
+
+

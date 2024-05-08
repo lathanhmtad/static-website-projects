@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./toasts.css">
+    <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+    <div class="content">
+        <button onclick="showToastSuccess()" class="btn btn--success">Show toast success</button>
+        <button onclick="showToastError()" class="btn btn--error">Show toast error</button>
+        <button onclick="showToastInfo()" class="btn btn--info">Show toast info</button>
+        <button onclick="showToastWarning()" class="btn btn--warning">Show toast warning</button>
+    </div>
+
+    <div id="toasts"></div>
+
+    <script src="./toasts.js"></script>
+    <script>
+        function showToastSuccess() {
+            toast({
+                title: 'Success',
+                message: 'Chúc mừng bạn đã đăng ký tài khoản thành công.',
+                type: 'success',
+                duration: 10000,
+            }) 
+        }
+
+        function showToastError() {
+            toast({
+                title: 'Error',
+                message: 'Có lỗi xảy ra, vui lòng liên hệ quản trị viên',
+                type: 'error',
+                duration: 3000,
+            }) 
+        }
+
+        function showToastInfo() {
+            toast({
+                title: 'Info',
+                message: 'Vui lòng liên hệ Nguyễn Đăng Duy',
+                type: 'info',
+                duration: 5000,
+            }) 
+        }
+
+        function showToastWarning() {
+            toast({
+                title: 'Warning',
+                message: 'Bạn không được phép vào khu này nếu không hậu quả rất đáng sợ',
+                type: 'warning',
+                duration: 5000,
+            }) 
+        }
+    </script>
+</body>
+</html>

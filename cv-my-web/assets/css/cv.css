@@ -1,0 +1,239 @@
+body {
+    background-color: var(--white-color);
+}
+
+.grid.wide {
+    max-width: 1000px;
+}
+
+:root {
+    --blue-color: #03a9f4;
+}
+
+a {
+    color: var(--white-color);
+}
+
+i {
+    color: var(--blue-color);
+}
+
+.container {
+    margin: 50px auto;
+    display: flex;
+}
+
+.left-side {
+    width: 100%;
+    background-color: #003147;
+    padding: 20px 30px;
+    color: var(--white-color);
+}
+
+.left-side section {
+    padding-top: 40px;
+}
+
+.self-profile {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.homebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__icon {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.home__icon:hover {
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.self-profile__img img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.self-profile h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.self-profile h4 {
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.left-side__title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    line-height: 2.4;
+}
+
+.contact li i {
+    margin-right: 12px;
+    font-size: 2rem;
+}
+
+.education li {
+    margin: 12px 0;
+}
+
+.education time {
+    color: var(--blue-color);
+    font-size: 1.3rem;
+}
+
+.education h5 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.education h6 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-skills h3 {
+    color: var(--blue-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.box-skills span {
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: 14px;
+}
+
+
+.right-side section {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 36px;
+}
+
+.right-side {
+    padding: 40px;
+    box-shadow: 0 0 19px 3px rgba(0, 0, 0, 0.1);
+}
+
+.right-side__title {
+    color: #003147;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 1.7rem;
+}
+
+.experience .content {
+    margin-bottom: 50px;
+}
+
+.experience .content .box {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.experience .content .box .year-company {
+    min-width: 150px;
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.experience .content .box .text h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.experience .content .box .text p {
+    font-size: 1.7rem;
+}
+
+.right-side .interests {
+    border-bottom: none;
+}
+
+
+.interests ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.interests ul li {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.interests ul li i {
+    font-size: 2rem;
+    width: 30px;
+}
+
+@media (max-width: 739px) {
+    .grid.wide {
+        width: auto;
+    }
+
+    .left-side {
+        padding: 20px 24px;
+    }
+
+    .right-side {
+        padding: 40px 24px;
+    }
+
+    .interests ul {
+        margin-bottom: 30px;
+    }
+}

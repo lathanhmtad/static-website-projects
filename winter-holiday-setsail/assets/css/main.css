@@ -1,0 +1,910 @@
+.app {
+    overflow: hidden;
+    position: relative;
+}
+
+/* == header == */
+.header {
+    height: var(--height-header);
+    background-color: var(--white-color);
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 5%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav {
+    height: var(--height-header);
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    align-self: center;
+}
+
+.nav__logo-img {
+    height: 48px;
+    vertical-align: middle;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    position: relative;  
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:last-child {
+    position: unset;
+}
+
+.nav-item:hover > .subnav {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.nav-item__link {
+    position: relative;
+    color: var(--black-color);
+    font-size: 1.5rem;
+    padding: 0 37px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+.nav-item__link:hover {
+    color: var(--primary-color);
+}
+
+.nav-item__link.underline-effect:hover::after {
+    width: calc(100% - 74px);
+}
+
+/* display */
+.nav__input--toggle-search:checked ~ .big-search {
+    display: block;
+}
+
+.nav__input--toggle-sidebar:checked ~ .sidebar {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav__input--toggle-sidebar:checked ~ .sidebar__overlay {
+    display: block;
+}
+
+/* big search */
+.overlay__search {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(63, 208, 212, 0.9);
+    animation: fadeIn linear 0.3s;
+}
+
+.big-search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}   
+
+.big-search__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 930px;
+    margin: 0 auto;
+    display: flex;
+    animation: fadeIn linear 0.3s;
+    font-size: 1.6rem;
+}
+
+.big-search__form-control {
+    flex: 1;
+    font-size: 1.6rem;
+    border: none;
+    height: 82px;
+    padding: 0 35px;
+    outline: none;
+}
+
+.big-search__form-control::placeholder {
+    color: #848484;
+    font-size: 1.4rem;
+}
+
+.big-search__icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.big-search__icon--close {
+    color: var(--white-color);
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+/* sidebar */
+.sidebar {
+    width: 450px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    background-color: var(--white-color);
+    overflow-y: auto;
+    opacity: 0;
+    box-shadow: 0 0 10px 4px rgb(0 0 0 / 0.08);
+    transform: translateX(100%);
+    transition: transform ease-in 0.4s, opacity ease-in 0.4s;
+}
+
+.sidebar__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 0.4);
+    display: none;
+    animation: fadeIn linear 0.4s;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sidebar__icon--close {
+    font-size: 3rem;
+    transition-duration: 0.4s;
+}
+
+.sidebar__icon--close:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.sidebar__inner {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 50px 0;
+}
+
+.sidebar__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar__logo--setsail {
+    width: 50%;
+    margin-bottom: 18px;
+}
+
+.sidebar__map {
+    margin-top: 50px;
+}
+
+.sidebar-desc {
+    margin-top: 26px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.sidebar__heading-common {
+    font-size: 1.8rem;
+    margin: 46px 0 26px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.sidebar__search-wrap {
+    display: flex;
+}
+
+.sidebar__search-input {
+    outline: none;
+    border: none;
+    background-color: #f8f8f8;
+    padding: 16px 22px 16px 12px;
+}
+
+.sidebar__search-btn {
+    padding: 12px 20px 12px 20px;
+}
+
+.sidebar__social-link {
+    display: inline-block;
+    transition-duration: 0.6s;
+}
+
+.sidebar__social-icon {
+    display: inline-block;
+    padding: 16px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    margin: 0 4px;
+}
+
+.sidebar__social-link:hover {
+    filter: brightness(0.9);
+}
+
+/* subnav */
+.subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 28px 0 30px 0;
+    box-shadow: 0 0 13px 3px rgb(0 0 0 / 3%);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform linear 0.3s, opacity linear 0.3s;
+    background-color: var(--white-color);
+}
+
+.subnav--size-l {
+    right: 0;
+}
+
+.subnav.subnav--child {
+    left: 100%;
+    top: -50%;
+    opacity: 1;
+    transform: scaleY(1);
+    display: none;
+    animation: fadeIn linear 0.4s;
+}
+
+.subnav--size-l .container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.subnav--size-l .heading {
+    cursor: default;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.subnav--size-l .heading:hover span.underline-effect::after {
+    width: 100%;
+} 
+
+.subnav--size-l .subnav-item {
+    padding: 4px 0;
+}
+
+.subnav-item {
+    position: relative;
+    width: 257px;
+    padding: 3px 0;
+}
+
+.subnav-item:hover .subnav.subnav--child {
+    display: block;
+}
+
+.subnav-item__link {
+    position: relative;
+    padding: 5px 25px 6px 32px;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+
+.subnav-item__link:hover {
+    color: var(--primary-color);
+}
+
+.subnav-item__link:hover .underline-effect::after {
+    width: 100%;
+}
+
+.subnav-item__link:hover.nav-arrow::after {
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+
+.nav__tools-item {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 2.2rem;
+    height: var(--height-header);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.nav__tools-item:hover .nav__tools-icon {
+    color: var(--primary-color);
+}
+
+.nav__tools-item:hover .product {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.nav__tools-icon {
+    transition-duration: 0.4s;
+}
+
+.product--no {
+    position: absolute;
+    top: var(--height-header);
+    right: 0;
+    width: 230px;
+    padding: 25px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 6px 2px rgb(0 0 0 / 3%);
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform ease-in 0.4s, opacity ease-in 0.4s;
+}
+
+.product__desc {
+    font-size: 1.4rem;
+    color: var(--black-color);
+    text-align: center;
+}
+
+/* == slider == */
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--height-header);
+}
+
+.slider__img {
+    animation: scaleImg linear 12s infinite alternate;
+}
+
+.slider__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.slider__title {
+    display: block;
+    font-size: 4.8rem;
+    font-weight: 200;
+    line-height: 5rem;
+    text-shadow: 2px 2px rgb(0 0 0 / 0.4);
+    font-family: 'Satisfy', cursive;
+    animation: slipDown ease-in 12s;
+}
+
+.slider__heading {
+    display: block;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 10rem;
+    text-shadow: 2px 2px rgb(0 0 0 / 0.2);
+    animation: speedInLeft ease-in 12s, heartBeat linear 10s infinite alternate;
+}
+
+.slider__desc {
+    position: relative;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px rgb(0 0 0 / 0.5);
+    margin-top: 16px;
+    animation: backInUp ease-in 12s;
+}
+
+/* == content == */
+.content {
+
+}
+
+/* places */
+.place {
+    margin-top: 20px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 13px 2px rgb(0 0 0 / 10%);
+}
+
+.place__tour {
+    position: relative;
+}
+
+.place__tour-img {
+    overflow: hidden;
+}
+
+.place__tour-img img {
+    transition-duration: 1.3s;
+    display: block;
+}
+
+.place__tour-img:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.place__tour-info {
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    padding: 8px 10px;
+}
+
+.place__tour-info-icon {
+    margin-right: 6px;
+}
+
+.place-body {
+    padding: 31px 25px 33px 25px;
+}
+
+.place-body__name {
+    font-size: 2.2rem;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    color: var(--black-color);
+}
+
+.place-body__name:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.place-body__desc {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.place-body__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.place-body--start-half {
+    margin-right: 4px;
+}
+
+.place-body__number {
+    margin: 0 12px 0 16px;
+}
+
+/* winter sprots */
+.winter-sports {
+    width: 900px;
+    max-width: 100%;
+    padding: 0 32px 130px;
+    margin: 0 auto;
+}
+
+.preview {
+    text-align: center;
+}
+
+.winter-sports__desc {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 28px 8px 0;
+    line-height: 1.6;
+}
+
+.winter-sports__btn  {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+/* top reviews */
+.top-reviews {
+    padding: 110px 0 156px 0;
+    background: url(../img/places/skiing-parallax-1.jpg) no-repeat fixed top center / cover;
+}
+
+.top-reviews__content {
+    text-align: center;
+    color: var(--white-color);
+}
+
+.top-reviews__content-heading {
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 6.5rem;
+    animation: flipInY ease-in 15s infinite alternate;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 46px 42px;
+    margin-top: 32px;
+}
+
+.card__img {
+    
+}
+
+.card__img-user {
+    border-radius: 50%;
+    width: 107px;
+    height: 107px;
+    object-fit: cover;
+}
+
+.card__evaluate {
+    margin-left: 22px;
+}
+
+.card__evaluate-name {
+    transition: 0.5s;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    color: var(--black-color);
+}
+
+.card__evaluate-name:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.card__evaluate--star {
+    color: var(--primary-color);
+}
+
+.card__evaluate--star + .card__evaluate--star {
+    margin-left: 2px;
+
+}
+
+.card__evaluate-des {
+    font-size: 1.4rem;
+    margin-top: 12px;
+    color: var(--text-color);
+}
+
+.card__evaluate-day {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* winter holiday */
+.winter-holiday {
+    padding-bottom: 164px;
+}
+
+.winter-holiday__place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winter-holiday__place-wrap-img {
+    transform: translateY(0);
+}
+
+.winter-holiday__place-wrap-img:hover .winter-holiday__place--img-camera {
+    transform: translateY(-8px);
+}
+
+.winter-holiday__place--img-camera {
+    transition-duration: 0.5s;
+}
+
+.winter-holiday__place-heading {
+    font-size: 1.8rem;
+    padding: 18px 0 12px 0;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.winter-holiday__place-desc {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.achievements {
+
+}
+
+.achievements__member {
+    position: relative;
+}
+
+.achievements__member:hover .achievements__info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.achievements__member-wrap-img img{
+    display: block;
+}
+
+.achievements__info {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 24px 26px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all ease-in 0.5s;
+}
+
+.achievements__info-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.achievements__info-desc {
+    margin: 12px 0 14px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.achievements__social-link {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    display: inline-block;
+    margin-right: 24px;
+    transition: 0.4s;
+}
+
+.achievements__social-link:hover {
+    color: #23a9af;
+}
+
+.achievements-statistical {
+    position: relative;
+    background-color: #3abdc1;
+    padding: 72px 24px;
+}
+
+.achievements-statistical__data {
+    color: var(--white-color);
+    text-align: center;
+}
+
+.achievements-statistical__data-num {
+    font-size: 6.5rem;
+    font-weight: 600;
+    animation: swing linear 10s infinite alternate;
+}
+
+.achievements-statistical__data-decs {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* winter resort */
+.winter-resort {
+    padding-bottom: 170px;
+}
+
+.winter-resort.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.winter-resort__place {
+    position: relative;
+    padding: 0 24px;
+}
+
+.winter-resort__wrap-img {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.winter-resort__place:hover .winter-resort__img {
+    transform: scale(1.1);
+}
+
+.winter-resort__img {
+    transform: scale(1);
+    transition-duration: 1s;
+    filter: brightness(0.8);
+    width: 100%;
+}
+
+.winter-resort__place-name {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 4.8rem;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.destination-featured {
+    position: absolute;
+    background-color: var(--primary-color);
+    right: 0;
+    top: 50%;
+    transform: translate(-120%, -345%);
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.destination-featured i {
+    color: var(--white-color);
+    font-size: 1.3rem;
+}
+
+/* == footer == */
+.footer {
+    background-color: var(--black-color);
+    padding: 106px 110px 0px;
+}
+
+.footer__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 78px;
+}
+
+.footer-list {
+    list-style: none;
+    color: var(--white-color);
+    padding: 0 18px;
+}
+
+.footer-item {
+    margin: 16px 0;
+}
+
+.footer-item__desc {
+    font-size: 1.7rem;
+    color: #a9a9a9;
+    line-height: 1.5;
+}
+
+.footer-item__link {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    transition-duration: 0.7s;
+}
+
+.footer-item__link.footer-item__link--color-text {
+    color: #a9a9a9;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.footer-item__icon {
+    width: 24px;
+}
+
+.footer-item__heading {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 26px;
+}
+
+.footer-item__link--time {
+    margin: 6px 0 32px;
+}
+
+.registration-form__box {
+    background-color: #595959;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.registration-form__icon {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 26px 0 16px;
+    width: 20px;
+}
+
+.form-control {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: #595959;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: var(--white-color);
+}
+
+.footer__copyright {
+    color: var(--white-color);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.footer__copyright-name {
+    display: inline;
+    color: var(--white-color);
+    transition-duration: 1s;
+}
+
+.footer__copyright-name:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.back-in-top {
+    position: fixed;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    bottom: 16px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 50%;
+    transition-duration: 1s;
+    box-shadow: 0 0 10px 3px rgb(0 0 0 / 0.1);
+    text-align: center;
+}
+
+.back-in-top:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}

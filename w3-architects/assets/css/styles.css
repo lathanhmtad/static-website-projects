@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1274px;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+:root {
+    --gray: #ccc;
+    --black: #000;
+    --white: #fff;
+    --height-header: 54.5px;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    margin-top: 42px;
+    float: left;
+}
+
+.col-four {
+    width: 25%;
+    padding: 0px 8px;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mb-16 {
+    margin-bottom: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+
+/* == Header == */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    height: var(--height-header);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#header .nav {
+    display: inline-block;
+    padding: 8px 0;
+    height: var(--height-header);
+}
+
+.nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .nav:nth-child(2) {
+    float: right;
+}
+
+#header .nav li {
+    float: left;
+    list-style-type: none;
+}
+
+#header .nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 16px;
+    display: inline-block;
+    letter-spacing: 4px;
+}
+
+#header .nav a:hover {
+    background-color: var(--gray);
+}
+
+
+/* == Banner == */
+#banner {
+    position: relative;
+    padding-top: 50%;
+    background: url('../img/banner/architect.jpg') no-repeat top center / cover;
+    
+}
+
+#banner .text {
+    position: absolute;
+    font-size: 3.6rem;
+    bottom: 50%;
+    transform: translateY(50%);
+    transform: translateY(130%);
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+}
+
+#banner .text span:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px 16px;
+}
+
+/* == Content == */
+#content .content-section {
+    padding: 58px 16px 0;
+}
+
+#content .content-section h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+#content .content-section h2::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #f1f1f1;
+    margin-top: 16px;
+}
+
+
+/* Project */
+.projects-list li{
+    list-style: none;
+    position: relative;
+}
+
+.projects-list li p {
+    position: absolute;
+    top: 0;
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* About */
+.about-text {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.about .text-body {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.about .text-body h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.about .text-body p:nth-child(even) {
+    margin: 25px 0;
+    opacity: 0.65;
+}
+
+.about .text-body .btn {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1.5rem;
+}
+
+.contact .btn:hover,
+.about .text-body .btn:hover {
+    background-color: var(--gray);
+    cursor: pointer;
+    color: var(--black);
+}
+
+/* Contact */
+
+.contact p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.contact .form-control {
+    font-size: 1.5rem;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 7.5px 0;
+}
+
+
+.contact .btn {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px 16px;
+    font-size: 1.5rem;
+    border: none;
+}
+
+/* == footer == */
+
+#footer {
+    margin-top: 10px;
+    background-color: var(--black);
+    height: 84.5px;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 84.5px;
+}
+
+#footer .copyright a {
+    color: var(--white);
+}
+
+#footer .copyright a:hover {
+    color: #4CAF50;
+}

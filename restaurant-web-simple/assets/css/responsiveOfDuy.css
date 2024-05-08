@@ -1,0 +1,152 @@
+/* PC */
+@media (min-width: 1024px) {
+    .hidden-on-pc {
+        display: none;
+    }
+    
+}
+
+/* Tablet & mobile */
+@media (max-width: 1023px) {
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+
+    header .nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 30vw;
+        top: 70px;
+        background-color: #423838;
+    }
+
+    header .nav.show {
+        display: block;
+        animation: fadeIn 0.3s linear;
+    }
+
+    .overlay-mobile-tablet {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+    }
+
+    .overlay-mobile-tablet.show {
+        display: block;
+        animation: fadeIn 0.3s linear;
+    }
+
+    .subnav-1 {
+        display: none;
+        position: relative;
+        padding-left: 25px;
+        width: 100%;
+    }
+
+    .subnav-2 {
+        display: none;
+        position: relative;
+        left: 25px;
+        top: 0;
+    }
+
+    .book-btn {
+        position: relative;
+        left: -35px;
+    }
+
+    .book-btn i {
+        position: absolute;
+        right: -40px;
+        font-size: 35px;
+        top: 5px;
+        color: #fff;
+        display: block;
+    }
+
+    .category li {
+        width: 100%;
+    }
+
+    .popular-foods .content .head {
+        margin: 12px 0 20px;
+    }
+
+    .events-content .text-content p {
+        width: auto;
+    }
+
+    .gallery {
+        margin-top: 42px;
+    }
+
+    .assessor .desc {
+        width: 100%;
+    }
+
+    .events-content .text-content {
+        margin: 24px 0 0 0;
+    }
+
+    #footer h6 {
+        margin: 24px 0 16px;
+    }
+
+    #footer span {
+        margin: 12px 0;
+    }
+
+    #footer .social-networks a {
+        width: 34px;
+        height: 34px;
+        margin-right: 2px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
+}
+
+/*  Mobile */
+@media (max-width: 739px) {
+    #banner .content h1 {
+        font-size: 5rem;
+    }
+
+    .popular-desserts .product-item {
+        display: block;
+    }
+
+    .section-subtitle,
+    .section-heading {
+        text-align: center;
+    }
+
+    .section-heading {
+        padding: 0 12px;
+    }
+
+    .section-desc {
+        padding: 0 16px;
+    }
+
+    .popular-desserts .product-item-desc {
+        margin: 12px 0 0 0;
+        text-align: left;
+    }
+}

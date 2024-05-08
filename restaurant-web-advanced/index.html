@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+</head>
+<body>
+    <!-- <div id="preloader"></div> -->
+    <div id="app">
+        <header id="header">
+            <div id="navigation">
+                <a href="./index.html" class="logo">Meal<span style="color: var(--primary-color)">.</span></a>
+                <div class="mobile-overlay js-mobile-overlay hidden-on-pc"></div>
+                <ul class="menu js-sidebar-mobile">  
+                    <div class="menu-close js-menu-close hidden-on-pc">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div> 
+                    <li class="menu-item"><a class="allow-next-page menu-link active" href="#">Home</a></li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">Menu
+                            <i class="fa-solid fa-angle-down icon-guide js-icon-guide"></i>
+                        </a>
+                        <ul class="subnav subnav-level-1 js-subnav">
+                            <li class="menu-item"><a class="menu-link" href="#">Elements</a></li>
+                            <li class="menu-item">
+                                <a class="menu-link" href="#">Menu Two
+                                    <i class="fa-solid fa-angle-right icon-guide"></i>
+                                </a>
+                                <ul class="subnav subnav-level-2 js-subnav">
+                                    <li class="menu-item"><a class="menu-link" href="#">Sub Menu One</a></li>
+                                    <li class="menu-item"><a class="menu-link" href="#">Sub Menu Two</a></li>
+                                    <li class="menu-item"><a class="menu-link" href="#">Sub Menu Three</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a class="menu-link" href="#">Menu Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="menu-link js-menu-link" href="#">Events</a></li>
+                    <li class="menu-item"><a class="menu-link js-menu-link" href="#">Gallery</a></li>
+                    <li class="menu-item"><a class="menu-link js-menu-link" href="#">About</a></li>
+                    <li class="menu-item"><a class="menu-link js-menu-link allow-next-page" href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn--primary-color">BOOK A TABLE</button>
+                <div class="menu-mobile js-menu-mobile hidden-on-pc">
+                    <i class="fa-solid fa-bars icon-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <div id="banner">
+            <img class="banner-img js-banner-img" src="./assets/img/banner/food.webp" alt="">
+            <section class="content">
+                <h3>ENJOY YOUR HEALTHY DELICIOUS MEAL</h3>
+                <h1 class="animate__animated animate__fadeInUp">Treat Yourself</h1>
+                <p class="animate__animated animate__fadeInUp">Another free template by <a href="#">Colorlib</a>. 
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <div class="btn btn--primary-color animate__animated animate__fadeInUp">EXPLORE NOW</div>
+            </section>
+            <div class="social-networks right-to-left js-show-on-scroll">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div class="grid wide">
+                <!-- popular-foods -->
+                <section class="popular-foods row fade-in-up js-show-on-scroll">
+                    <div class="col l-4 m-12 c-12 ">
+                        <h3 class="section-subtitle">SELECT YOUR MEAL</h3>
+                        <h2 class="section-heading">Popular <span>Foods</span></h2>
+                        <ul class="category js-category">
+                            <li data-index="1" class="active">
+                                <img src="./assets/img/foods/category/1.webp" alt="">
+                                Breakfast</li>
+                            <li data-index="2">
+                                <img src="./assets/img/foods/category/2.webp" alt="">
+                                Lunch</li>
+                            <li data-index="3">
+                                <img src="./assets/img/foods/category/3.webp" alt="">
+                                Dinner</li>
+                            <li data-index="4">
+                                <img src="./assets/img/foods/category/4.webp" alt="">
+                                Drinks</li>
+                        </ul>
+                    </div>
+                    <div class="col l-8 m-12 c-12">
+                        <div class="content">
+                            <div class="head row js-head">  
+                                <div class="col l-6 m-6 c-6">
+                                    <h2 class="meal js-meal">Breakfast</h2>
+                                </div>
+                                <div class="col l-6 m-6 c-6">
+                                    <p class="page js-page">1/4</p>
+                                </div>
+                            </div>
+                            <div class="food-description js-food-description">
+                                <div class="product row js-first-product-line">
+                                    <!-- item -->                               
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="product__img">
+                                            <img src="./assets/img/foods/breakfast/1.webp" alt="">
+                                        </div>
+                                        <p class="product__name">Italian Sauce Mushroom</p>
+                                        <span class="product__price">$19.00</span>
+                                    </div>       
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="product__img">
+                                            <img src="./assets/img/foods/breakfast/2.webp" alt="">
+                                        </div>
+                                        <p class="product__name">Italian Sauce Mushroom</p>
+                                        <span class="product__price">$19.00</span>
+                                    </div>       
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="product__img">
+                                            <img src="./assets/img/foods/breakfast/3.webp" alt="">
+                                        </div>
+                                        <p class="product__name">Italian Sauce Mushroom</p>
+                                        <span class="product__price">$19.00</span>
+                                    </div>       
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="product__img">
+                                            <img src="./assets/img/foods/breakfast/4.webp" alt="">
+                                        </div>
+                                        <p class="product__name">Italian Sauce Mushroom</p>
+                                        <span class="product__price">$19.00</span>
+                                    </div>       
+                                </div>
+                                <div class="product row js-last-product-line">
+                                    <!-- item -->            
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="product__img">
+                                            <img src="./assets/img/foods/breakfast/1.webp" alt="">
+                                        </div>
+                                        <p class="product__name">Italian Sauce Mushroom</p>
+                                        <span class="product__price">$19.00</span>
+                                    </div>       
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="product__img">
+                                            <img src="./assets/img/foods/breakfast/1.webp" alt="">
+                                        </div>
+                                        <p class="product__name">Italian Sauce Mushroom</p>
+                                        <span class="product__price">$19.00</span>
+                                    </div>                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- popular desserts -->
+                <section class="popular-desserts js-popular-desserts fade-in-up js-show-on-scroll">
+                    <h3 class="section-subtitle">CHOOSE DESSERTS</h3>
+                    <h2 class="section-heading">Popular <span>Desserts</span></h2>
+                    <div class="product-list row js-product-list">
+                        <!-- item -->
+                    </div>
+                </section>
+            </div>
+            
+            <!-- comment -->
+            <section class="comment js-comment section-bc-img">
+                <div class="grid wide row js-popular-desserts fade-in-up js-show-on-scroll">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="customers ">
+                            <h3 class="section-subtitle">TESTIMONIALS</h3>
+                            <h2 class="section-heading">Satisfied <span>Customers</span></h2>
+                            <div class="assessor-container">
+                                <div class="assessor-inner js-assessor-inner">
+                                    <!-- assessor-item -->
+                                </div>
+                            </div>
+                            <div class="dots js-dots">
+                                <div class="dot js-dot js-slide-assessor active">
+                                    <span></span>
+                                </div>
+                                <div class="dot js-dot js-slide-assessor">
+                                    <span></span>
+                                </div>
+                                <div class="dot js-dot js-slide-assessor">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="gallery">
+                            <h3 class="section-subtitle">GALLERIES</h3>
+                            <h2 class="section-heading">Photo <span>Galleries</span></h2>
+                            <div class="row gallery-content js-gallery-content">
+                                <!-- item -->
+                            </div>          
+                            <button class="btn btn--primary-color js-more-galleries">MORE GALLERIES</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="lightbox js-lightbox">
+                <i class="fa-solid fa-xmark lightbox-close js-lightbox-close"></i>
+                <div class="lightbox-content">
+                    <i class="fa fa-angle-left lightbox-prev js-lightbox-prev"></i>
+                    <img class="js-lightbox-img" src="./assets/img/foods/breakfast/1.webp" alt="">
+                    <i class="fa fa-angle-right lightbox-next js-lightbox-next"></i>
+                </div>
+            </div>
+
+            <section class="events">
+                <div class="section-content js-popular-desserts fade-in-up js-show-on-scroll">
+                    <h3 class="section-subtitle">EVENTS</h3>
+                    <h2 class="section-heading">Enjoy <span>Our Events</span></h2>
+                    <p class="section-desc mt-16">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.            
+                    </p>
+                </div>
+                <div class="grid wide js-popular-desserts fade-in-up js-show-on-scroll">
+                    <div class="events-container">
+                        <div class="events-inner js-events-inner">
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <div class="dot js-dot js-slide-events active">
+                            <span></span>
+                        </div>
+                        <div class="dot js-dot js-slide-events">
+                            <span></span>
+                        </div>
+                        <div class="dot js-dot js-slide-events">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="order section-bc-img">       
+                <div class="order-container js-popular-desserts fade-in-up js-show-on-scroll">
+                    <div class="section-content">
+                        <h3 class="section-subtitle">EVENTS</h3>
+                        <h2 class="section-heading">Enjoy <span>Our Events</span></h2>
+                        <p class="section-desc mt-16">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.            
+                        </p>
+                        <button class="btn btn--primary-color mt-16">BOOK A TABLE</button>
+                    </div>
+                </div>   
+            </section>
+        </div>
+
+        
+        <footer id="footer">
+            <div class="grid wide row js-popular-desserts fade-in-up js-show-on-scroll">
+                <div class="col l-4 m-12 c-12">
+                    <h6>About Meal.</h6>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <span>Connect</span>
+                    <div class="social-networks">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="col l-2 m-12 c-12 l-o-1">
+                    <h6>Information</h6>
+                    <ul>
+                        <li><a href="#">Introduce</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-12 c-12">
+                    <h6>Support</h6>
+                    <ul>
+                        <li><a href="#">Meal.'s Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Delivery Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-12 c-12">    
+                    <h6>Contact</h6>
+                    <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                    <ul>
+                        <li><a href="#">+1(234)-567-890</a></li>
+                        <li><a href="#">+0(123)-456-789</a></li>
+                        <li><a href="#">meal.restaurant@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&#169; 2022 Meal. All Rights Reserved | This website is made by <span>Dang Duy</span> & <span>Quang Vinh</span></p>
+        </footer>
+
+        <div class="nothing"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleImg {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-500%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes speedInLeft {
+    0% {
+        transform: translate3d(-50%,0,0) skewX(30deg);
+        opacity: 0;
+    }
+    60% {
+        transform: skewX(-20deg);
+        opacity: 1;
+    }
+    80% {
+        transform: skewX(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes backInUp {
+    0% {
+        transform: translateY(400%) scale(0.8);
+        opacity: .7;
+    }
+    
+    80% {
+        transform: translateY(0) scale(0.8);
+        opacity: .7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slipDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,-400%,0);
+        visibility: visible;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes pluse {
+    0% {
+        transform: scaleX(1);
+    }
+    
+    50% {
+        transform: scale3d(1.05,1.05,1.05);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    14% {
+        transform: scale(1.1);
+    }
+    28% {
+        transform: scale(1);
+    }
+    42% {
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(50deg);
+        animation-timing-function: ease-in;
+        opacity: 0.5;
+    }
+    40% {
+        transform: perspective(400px) rotateY(-10deg);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: perspective(400px) rotateY(10deg);
+        opacity: 1;
+    }
+    80% {
+        transform: perspective(400px) rotateY(-50deg);
+    }
+    100% {
+        transform: perspective(400px);
+    }
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+

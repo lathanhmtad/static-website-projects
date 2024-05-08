@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid+.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header animate__animated animate__fadeInDown">
+            <a href="./index.html" class="brand">VN-Travel</a>
+            <nav class="nav">
+                <div class="nav__list">
+                    <a href="#">Home</a>
+                    <a href="#">Du Lịch</a>
+                    <a href="#">Văn Hóa</a>
+                    <a href="#">Ẩm Thực</a>
+                    <a href="#">Con Người</a>
+                    <a href="#">Tin Tức</a>
+                </div>
+            </nav>  
+        </header>
+        <section class="home">
+            <video autoplay loop controls muted class="slide-video active">
+                <source src="./assets/video/home-page/y2mate.com - Bản EDM đang gây sốt 2018  Axel Johansson  The River Lyrics Video   Welcome to Vietnam_v720P.mp4">
+            </video>
+            <video autoplay loop controls muted class="slide-video">
+                <source src="./assets/video/home-page/du-lich.mp4">
+            </video>
+            <video autoplay loop controls muted class="slide-video">
+                <source src="./assets/video/home-page/y2mate.com - Truyền thống văn hóa Việt Nam_480p.mp4">
+            </video>
+            <video autoplay loop controls muted class="slide-video">
+                <source src="./assets/video/home-page/con-nguoi.mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h1 class="content__title animate__animated animate__backInLeft">
+                    Du Lịch <br>
+                    <span>Việt Nam</span>
+                </h1>   
+                <p class="content__desc animate__animated animate__zoomInLeft">
+                    Việt Nam điểm đến mới của thế giới sẽ không làm bạn thất vọng. Với bề dày lịch sử của mình, Việt Nam ẩn chứa trong mình một nền 
+                    văn hóa vô cùng phong phú hòa quện cùng nền ẩm thực hấp dẫn đến mê người.
+                </p>
+                <a href="#" class="btn btn-more btn-time-animation animate__animated animate__fadeInBottomLeft">Tìm hiểu thêm</a>
+            </div>
+            <div class="socials animate__animated animate__bounceInRight">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a hoverlayref="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>         
+            </div>
+        
+            <!-- slides video -->
+            <div class="dots-btn">
+                <div class="dot-btn active"></div>
+                <div class="dot-btn"></div>
+                <div class="dot-btn"></div>
+                <div class="dot-btn"></div>
+            </div>
+        </section>
+    </div>
+
+    
+   <div class="tab-func">
+        <i class="fa-solid fa-sliders"></i>
+   </div>
+    <div class="control">
+        <div class="control-content">
+            <h3>Âm thanh:</h3> 
+            <div class="control-btn">
+                <i class="fa-solid fa-volume-xmark switch-btn switch-btn--sound"></i>
+            </div>
+        </div>
+        <div class="control-content">
+            <h3>Phát lại:</h3> 
+            <div class="control-btn">
+                <i class="fa-solid fa-repeat switch-btn switch-btn--reload"></i>
+            </div>
+        </div>
+        <!-- <div class="control-content">
+            <h3>Trạng thái video</h3>
+            <div class="control-btn">
+                <i class="fa-solid fa-play switch-btn switch-btn--pause"></i>
+            </div>
+        </div> -->
+        <!-- <div class="control-content">
+            <h3>Ẩn nội dung</h3>
+            <div class="control-btn">
+                <div class="switch-btn switch-btn--full-screen"></div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

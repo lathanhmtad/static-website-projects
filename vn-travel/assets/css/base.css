@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --box-shadow: rgb(49 49 49 / 35%) 0 22px 70px 4px;
+    --blue-color: rgba(69, 122, 191, 1);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    outline: none;
+    padding: 16px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--box-shadow);
+    background-color: rgba(69, 122, 191, 0.1);
+    font-size: 2rem;
+    transition-duration: 0.35s;
+}
+
+.btn-more:hover {
+    background-color: rgba(228, 97, 87, 1);
+    box-shadow: rgb(228 97 87) 0 5px 38px, rgb(228 97 87) 0 0 28px;
+}
+
+.btn-time-animation {
+    animation-duration: 3s;
+}
+
+.line-effect {
+    position: fixed;
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    transition: all 0.2s linear;
+}

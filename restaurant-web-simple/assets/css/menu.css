@@ -1,0 +1,197 @@
+/* Begin: Contain */
+
+#contain-menu {
+    background-color: #fee2b3;
+}
+
+    /* Foods */
+.foods {
+    max-width: 1140px;
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    line-height: 32px;
+    font-size: 20px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    height: 64px;
+    width: 255px;
+    cursor: pointer;
+}
+
+.sidebar img {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.active-sidebar {
+    background-color: #fff;
+    border-radius: 32px;
+    color: #ff5200;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.food-list {
+    width: 70%;
+    padding: 0px 15px;
+    position: relative;
+}
+
+.food-list h2 {
+    display: block;
+    width: 340px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+        /* Time-food-list */
+/* .breakfast-food-list {
+    display: none;
+} */
+
+.lunch-food-list {
+    display: none;
+}
+
+.dinner-food-list {
+    display: none;
+}
+
+.drinks-list {
+    display: none;
+}
+
+.food-product {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.food-image {
+    width: 350px;
+    height: 196px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.food-product img {
+    width: 350px;
+    height: 196px;
+    cursor: pointer;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.food-product img:hover {
+    transform: scale(1.1);
+}
+
+.food-product p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 10px 0px 8px 0px;
+    cursor: pointer;
+}
+
+.food-product span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #ff5200;
+    font-weight: bold;
+}
+
+
+.flex-food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    /* Desserts */
+.desserts {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.desserts>span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.desserts>h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.desserts>h3>span {
+    color: #ff5200;
+    font-weight: bold;
+}
+
+.desserts-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.desserts-product {
+    display: flex;
+    flex-wrap: wrap;
+    width: 253px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.desserts-product:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.desserts-product img {
+    width: 60px;
+}
+
+.desserts-product h3 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.desserts-product span {
+    color: #ff5200;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End: Contain */
+

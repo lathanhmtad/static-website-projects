@@ -1,0 +1,196 @@
+/* PC */
+@media (min-width: 1024px) {
+    .prev-testimonial,
+    .next-testimonial {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --section-spacing: 100px;
+    }
+
+    .product-content {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .product-card {
+        width: 46%;
+    }
+
+    /* CV */
+    .container {
+        margin: 50px 16px;
+    }
+
+    .prev-testimonial,
+    .next-testimonial {
+        display: none;
+    }
+}
+
+/* Table & Mobile */
+@media (max-width: 1023px) {
+    .mt-24 {
+        margin-top: 24px !important;
+    }
+
+    .about-content {
+        justify-content: center;
+    }
+
+    .about-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .about-data p {
+        text-align: center;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skills-content {
+        margin: 12px auto;
+    }
+
+    .services-card {
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+
+    .contact-card {
+        width: auto;
+    }
+
+    form {
+        width: auto;
+        margin-left: 24px;
+    }
+
+    /* CV */
+    .container {
+        margin: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    :root {
+        --section-spacing: 80px;
+    }
+
+    ::-webkit-scrollbar { display: none; }
+
+    .topbar {
+        padding: 0 20px;
+    }       
+
+    .home-self {
+        padding: 0 20px;
+    }
+
+    .home-handle {
+        padding: 28px 0 0 0;
+    }
+
+    .home-social,
+    .home-directional {
+        width: 34px;
+    }
+
+    .home-social::after {
+        transform: translateX(0);
+    }
+
+    .home-handle img {
+        width: 190px;
+    }
+
+    .home__name {
+        font-size: 3.3rem;
+    }
+
+    .home__education {
+        font-size: 1.3rem;
+    }
+
+    .home-directional i {
+        transform: translateX(0);
+    }
+
+    .about-content {
+        padding: 0 20px;
+    }
+
+    .about-content img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-box {
+        width: auto;
+        padding: 14px 2px;
+    }
+
+    .skills-container {
+        padding: 0 20px;
+    }
+
+    .services-container {
+        padding: 0 20px;
+    }
+
+    .services-modal-content {
+        padding: 54px 16px 32px;
+        margin: 0 14px;
+    }
+
+    .product-content {
+        padding: 0 32px;
+        justify-content: space-around;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .testimonial__card {
+        flex: 0 0 98%;
+        padding: 24px 16px;
+        text-align: center;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .contact-container {
+        padding: 0 20px;
+        justify-content: center;
+    }
+    
+    .contact-card {
+        width: 320px;
+    }
+
+    form {
+        margin-left: unset;
+    }
+
+    /* CV */
+    .container {
+        flex-wrap: wrap;
+    }
+}

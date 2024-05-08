@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f2726a;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 1100px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, #00853e, #50c878);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.card__img {
+    width: 120px;
+    height: 120px;
+    margin: 24px auto;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    overflow: hidden;
+    transition-duration: 0.2s;
+}
+
+.card__img:hover {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: unset;
+    margin: 0 auto;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card__name {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.card__job {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.card__social-network {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+
+.card__social-network--link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    transition-duration: 0.3s;
+}
+
+.card__social-network--link:hover {
+    color: var(--primary-color);
+}
+
+.card__btn {
+    margin-top: 28px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.card__btn:hover {
+    background-color: var(--primary-color);
+    color: #000;
+    cursor: pointer;
+}

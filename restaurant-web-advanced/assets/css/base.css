@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #ff5200;
+    --text-color: #333333;
+    --footer-color: #645f56;
+    --pink-color: #fee2b3;
+    --height-header: 70px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+#preloader {
+    background: #000 url('../img/preloader/cartoon-cute-flower-dividing-line-decoration-gif-animation-bow_2733812.png!bw340') no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 500;
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    border: 0;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    border-radius: 24px;
+    font-weight: 600;
+    padding: 18px 32px;
+    transition-duration: 0.2s;
+    letter-spacing: 1px;
+}
+
+.btn.btn.btn--primary-color {
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+#app {
+    overflow: hidden;
+}
+
+/* === header === */
+#header {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: transparent;
+}
+
+#header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: headerEffect linear 0.2s;
+    background-color: #504949;
+}
+
+/* navigation */
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    height: var(--height-header);
+}
+
+#navigation .logo {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+#navigation .btn {
+    padding: 14px 24px;
+}
+
+#navigation .menu {
+    display: flex;
+    margin-left: 100px;
+}
+
+#navigation .menu-item {
+    position: relative;
+}
+
+#navigation .menu-item:hover .menu-link {
+    color: var(--white-color);
+}
+
+#navigation .menu-link {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 16px;
+    transition-duration: 0.2s;
+}
+
+#navigation .menu-link.active {
+    color: var(--white-color);
+}
+
+#navigation .menu-link .icon-guide {
+    font-size: 1rem;
+}
+
+/* subnav */
+#navigation .subnav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+    display: none;
+    animation: fadeIn linear 0.15s;
+}
+
+#navigation .subnav-level-2 {
+    left: 100%;
+    top: 0;
+} 
+
+#navigation .subnav .menu-item:hover > .menu-link {
+    color: var(--primary-color);
+}
+
+#navigation .subnav .menu-item .menu-link {
+    color: var(--black-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* hover display subnav */
+#navigation .menu-item:hover .subnav-level-1,
+#navigation .subnav .menu-item:hover .subnav-level-2 {
+    display: block;
+}
+
+/* === banner === */
+#banner {
+    position: relative;
+    bottom: var(--height-header);
+    height: 100vh;
+}
+
+#banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    animation: scale 4s linear infinite alternate;
+}
+
+
+#banner::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#banner .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    max-width: 570px;
+    width: 100%;
+    color: var(--white-color);
+}
+
+#banner .content h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#banner .content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    margin-bottom: 24px;
+    animation-duration: 2s;
+    animation-delay: 2.4s;
+}
+
+#banner .content p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    animation-duration: 2s;
+    animation-delay: 2.4s;
+}
+
+#banner .content .btn {
+    animation-delay: 2.4s;
+    animation-duration: 2s;
+}
+
+#banner .content p a {
+    box-shadow: 0 4px var(--primary-color);
+    color: var(--white-color);
+    line-height: 20px;
+}
+
+#banner .social-networks {
+    position: absolute;
+    bottom: 36px;
+    right: 36px;
+    z-index: 10;
+}
+
+
+/* === footer === */
+#footer {
+    position: relative;
+    bottom: var(--height-header);
+    background-color: var(--footer-color);
+    padding-top: 100px;
+    color: var(--white-color);
+}
+
+#footer h6 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+}
+
+#footer address {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+#footer p {
+    margin-top: 24px;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+#footer span {
+    margin: 24px 0;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+#footer li a {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 14px;
+    font-size: 1.4rem;
+    transition-duration: 0.25s;
+}
+
+#footer li a:hover {
+    color: var(--white-color);
+}
+
+#footer .copyright {
+    margin-top: 64px;
+    text-align: center;
+}
+
+#footer .copyright span {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* phần bù bị dư cuối trang */
+.nothing {
+    background-color: var(--footer-color);
+    height: 70px;
+    bottom: 4px;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+
+/* common */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-subtitle {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.section-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.section-heading span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.section-desc {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 635px;
+    width: 100%;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.section-bc-img {
+    position: relative;
+    background: url('../img/banner/food2.webp') no-repeat fixed center / cover;
+}
+
+.section-bc-img::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 201, 126, 0.9);
+}
+
+.dots {
+    margin-top: 48px;
+    display: flex;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+}
+
+.social-networks {
+    display: flex;
+}
+
+.social-networks a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 0 2px;
+    transition-duration: 0.25s;
+}
+
+.social-networks a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+

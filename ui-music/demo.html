@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo.css">
+    <style></style>
+</head>
+<body>
+    <button onclick="Toasts({type: 'warning', message: 'warning'})" class="btn btn--warning">Click me!</button>
+    <button onclick="Toasts({type: 'error', message: 'error'})" class="btn btn--error">Click me!</button>
+    <button onclick="Toasts({type: 'success', message: 'success'})" class="btn btn--success">Click me!</button>
+    <div class="toasts">
+    </div>
+
+    <script>
+        function Toasts({type, message}) {
+            const toasts = document.querySelector('.toasts');
+
+            const toast = document.createElement('div');
+            toast.classList.add('toast', `toast--${type}`);
+            toast.innerHTML = `
+                <i class="fa-solid fa-exclamation"></i>
+                <p>${message}</p>
+            `;
+            toasts.appendChild(toast);
+
+            setTimeout(function() {
+                toasts.removeChild(toast);
+            }, 3000)
+        }
+
+    </script>
+</body>
+
+
+</html>

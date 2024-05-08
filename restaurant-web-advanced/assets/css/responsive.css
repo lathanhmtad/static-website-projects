@@ -1,0 +1,214 @@
+/* PC */
+@media (min-width: 1024px) {
+    .hidden-on-pc {
+        display: none;
+    }
+    
+}
+
+/* Tablet & mobile */
+@media (max-width: 1023px) {
+    #navigation {
+        justify-content: flex-end;
+    }
+
+    #navigation .logo {
+        flex: 1;
+    }
+
+    #navigation .btn {
+        padding: 10px 16px;
+    }
+
+    #navigation .menu-mobile {
+        color: var(--white-color);
+        font-size: 4rem;
+        margin-left: 14px;
+        cursor: pointer;
+    }
+    
+    #navigation .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        animation: fadeIn 0.35s linear;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    #navigation .menu {
+        position: fixed;
+        width: 300px;
+        padding: 64px 32px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 200;
+        background-color: var(--white-color);
+        display: block;
+        transform: translateX(100%);
+        opacity: 0;
+        transition-duration: 0.35s;
+    }
+
+    #navigation .menu.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #navigation .menu-close {
+        position: absolute;
+        top: 14px;
+        right: 30px;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    #navigation .menu-link {
+        color: var(--black-color);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navigation .menu-item:hover > .menu-link {
+        color: var(--primary-color);
+    }
+
+    #navigation .menu-link.active {
+        color: var(--primary-color);
+    }
+
+    #navigation .menu-item .subnav {
+        position: unset;
+        box-shadow: unset;
+        margin-left: 32px;
+        padding: 0;
+    }
+
+    #navigation .navigation-bars {
+        font-size: 1.8rem;
+        color: var(--white-color);
+    }
+
+    #navigation .menu-link .icon-guide {
+        width: 36px;
+        height: 36px;
+        box-shadow: 0 0 14px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category li {
+        width: 100%;
+    }
+
+    .popular-foods .content .head {
+        margin: 12px 0 20px;
+    }
+
+    .popular-foods .section-heading, 
+    .popular-foods .section-subtitle {
+        text-align: center;
+    }
+
+    .assessor .desc {
+        width: 100%;
+    }
+
+    .gallery {
+        margin-top: 42px;
+    }
+
+    .events-content {
+        display: block;
+    }
+
+    .events-content .text-content {
+        transform: translateY(0);
+        margin-top: 16px;
+    }
+
+    .events-content .text-content {
+        margin: 24px 0 0 0;
+    }
+
+    #footer h6 {
+        margin: 24px 0 16px;
+    }
+
+    #footer span {
+        margin: 12px 0;
+    }
+
+    #footer .social-networks a {
+        width: 34px;
+        height: 34px;
+        margin-right: 2px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
+}
+
+/*  Mobile */
+@media (max-width: 739px) {
+    #banner .content h1 {
+        font-size: 5rem;
+    }
+
+    #banner .social-networks {
+        bottom: 22px;
+        right: 20px;
+    }
+
+    .popular-desserts .product-item {
+        display: block;
+    }
+
+    .popular-desserts .product-item-desc {
+        margin: 12px 0 0 0;
+        text-align: left;
+    }
+
+    .popular-foods .product.row {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .gallery-content {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .events-content .text-content p {
+        width: auto;
+    }
+
+
+    .section-content {
+        padding: 0 12px;
+    }
+
+    .popular-desserts .product-item {
+        min-height: 250px;
+    }
+}

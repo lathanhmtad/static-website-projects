@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Đăng Duy</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/toasts.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header js-header">
+            <nav class="topbar grid wide">
+                <a href="#home">Trang Chủ</a>
+                <i class='bx bx-moon js-change-theme'></i>
+            </nav>
+              
+            <nav class="nav-menu">
+                <a class="nav-link active js-nav-link" href="#home">
+                    <i class='bx bx-home' ></i>
+                </a>
+                <a class="nav-link js-nav-link" href="#about">
+                    <i class="bx bx-user"></i>
+                </a>
+                <a class="nav-link js-nav-link" href="#skills">
+                    <i class='bx bx-book' ></i>
+                </a>
+                <a class="nav-link js-nav-link" href="#services">
+                    <i class='bx bx-barcode'></i>
+                </a> 
+                <a class="nav-link js-nav-link" href="#product">
+                    <i class='bx bx-briefcase-alt'></i>
+                </a>
+                <a class="nav-link js-nav-link" href="#my-customers">
+                    <i class='bx bxs-customize'></i>
+                </a>
+                <a class="nav-link js-nav-link" href="#contact">
+                    <i class='bx bx-message'></i>
+                </a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <!-- home -->
+                <section id="home" class="home grid wide">
+                    <span class="home__greeting fade-in-down js-show-on-scroll start">Xin chào</span>
+                    <h1 class="home__name fade-in-down js-show-on-scroll start">Tôi là: <span class="home__name-auto-input js-home__name-auto-input"></span></h1>
+                    <h3 class="home__education fade-in-down js-show-on-scroll start">
+                        Software Design <br>
+                        Backend Developer
+                    </h3>
+                    <div class="home__btn fade-in-down js-show-on-scroll start">
+                        <a target="_blank" href="./cv.html" class="btn btn--transparent-color btn--text-primary-color">Xem CV</a>
+                        <a href="#about" class="btn btn--primary-color">Giới thiệu</a>
+                    </div>
+                    <div class="home-self">
+                        <div class="home-social fade-in-left js-show-on-scroll">
+                            <a href="https://www.facebook.com/profile.php?id=100066340331597" target="_blank">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a class="no-next-page" onclick="showToast('error', 'Mình chưa có làm youtube bạn à', 3000)" href="#">
+                                <i class="bx bxl-youtube"></i>
+                            </a>
+                            <a class="no-next-page" onclick="showToast('warning', 'Mình chưa có làm behance bạn à', 3000)" href="#">
+                                <i class="bx bxl-behance"></i>
+                            </a>
+                        </div>
+                        <div class="home-handle js-show-on-scroll fade-in-down">
+                            <img src="./assets/img/user/perfil.png" alt="">
+                        </div>
+                        <a href="#about" class="home-directional js-show-on-scroll fade-in-right">
+                            <i class="bx bx-mouse"></i>
+                            <span>Trượt Xuống</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- about -->
+                <section id="about" class="about grid wide">
+                    <span class="section__subtitle js-show-on-scroll fade-in-down">Giới thiệu</span>
+                    <h2 class="section__title js-show-on-scroll fade-in-down">Tôi</h2>
+                    <div class="about-content row">
+                        <div class="col l-6">
+                            <img class="js-show-on-scroll fade-in-left" src="./assets/img/about/1bdd34789a7d5a23036c.jpg" alt="">
+                        </div>
+                        <div class="col l-6 c-12">
+                            <div class="about-data js-show-on-scroll fade-in-right">
+                                <div class="about-info row">    
+                                    <div class="col l-4 c-4">
+                                        <div class="about-box">
+                                            <i class="bx bx-award"></i>
+                                            <h3>Kinh nghiệm</h3>
+                                            <span>1 + Năm Làm Việc</span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 c-4">
+                                        <div class="about-box">
+                                            <i class="bx bx-briefcase"></i>
+                                            <h3>Hoàn Thành</h3>
+                                            <span>10 + Dự Án nhỏ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 c-4">
+                                        <div class="about-box">
+                                            <i class="bx bxs-building-house"></i>
+                                            <h3>Đã Từng</h3>
+                                            <span>Làm Việc Tại 0 Công Ty Khác Nhau</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Tôi cố gắng trở thành một coder pro thực thụ , bằng việc tự mình học hỏi nhiều công nghệ cũng như công cụ khác nhau của ngành công nghệ thông tin , cụ thể là : thiết kế phần mềm , làm game , thiết kế web...</p>
+                                <a href="#contact" class="btn btn--primary-color">Liên lạc</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- skills -->
+                <section id="skills" class="skills grid wide">
+                    <span class="section__subtitle js-show-on-scroll fade-in-down">Kỹ Năng</span>
+                    <h2 class="section__title js-show-on-scroll fade-in-down">Kinh Ngiệm Của Tôi</h2>
+                    <div class="skills-container row">
+                        <div class="col l-6 m-12 c-12">
+                            <div class="skills-content js-show-on-scroll zoom-in">
+                                <h3 class="skills-content__title">Software Design</h3>
+                                <div class="skills-box">
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">Photoshop</h3>
+                                            <span class="skills-level">Chưa học</span>
+                                        </div>
+                                    </div>  
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">AutoCad</h3>
+                                            <span class="skills-level">Chưa học</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">Illustrator</h3>
+                                            <span class="skills-level">Chưa học</span>
+                                        </div>
+                                    </div>  
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">CoreIDraw</h3>
+                                            <span class="skills-level">Cơ Bản</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="skills-content js-show-on-scroll zoom-in">
+                                <h3 class="skills-content__title">FrontEnd Developer</h3>
+                                <div class="skills-box">
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">HTML</h3>
+                                            <span class="skills-level">Am hiểu</span>
+                                        </div>
+                                    </div>  
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">Javascript</h3>
+                                            <span class="skills-level">Cơ bản</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills-box">
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">CSS</h3>
+                                            <span class="skills-level">Cơ Bản</span>
+                                        </div>
+                                    </div>  
+                                    <div class="skills-data">
+                                        <i class="bx bx-check-circle"></i>
+                                        <div class="skills-data__desc">
+                                            <h3 class="skills-name">React</h3>
+                                            <span class="skills-level">Chưa học</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- services -->
+                <section id="services" class="services grid wide">
+                    <span class="section__subtitle js-show-on-scroll fade-in-down">Dịch Vụ</span>
+                    <h2 class="section__title js-show-on-scroll fade-in-down">Cung Cấp Các Dịch Vụ</h2>
+                    <div class="services-container row">
+                        <div class="col l-3 m-6 c-6">
+                            <div class="services-card js-show-on-scroll fade-in-left">
+                                <h3>Thiết Kế Phần mềm</h3>
+                                <button data-index="0" class="btn-text js-btn-services">Xem thêm
+                                    <i class="bx bx-right-arrow-alt services__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="services-card js-show-on-scroll zoom-in">
+                                <h3>Thiết Kế Web</h3>
+                                <button data-index="1" class="btn-text js-btn-services">Xem thêm
+                                    <i class="bx bx-right-arrow-alt services__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-6">
+                            <div class="services-card js-show-on-scroll fade-in-right">
+                                <h3>Hack Facebook</h3>
+                                <button data-index="2" class="btn-text js-btn-services">Xem thêm
+                                    <i class="bx bx-right-arrow-alt services__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-index="1" class="services-modal js-services-modal">
+                        <div class="services-modal-content">
+                            <i class="bx bx-x services-modal-close js-services-modal-close"></i>
+                            <h2 class="services-modal-title">Thiết kế phần mềm</h2>
+                            <p class="services-modal-description">Tôi sẽ học trong tương lai và cung cấp các dịch vụ</p>
+                            <ul class="services-modal-list">
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Giới thiệu, đề ra những giải pháp tối ưu cho khách hàng.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Phân tích các use cases
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Xây dựng kiến trúc của hệ thống
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Tiến hành lập trình các tính năng động, thiết lập cơ sở dữ liệu.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Dịch vụ hậu đãi, chăm sóc khách hàng.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div data-index="2" class="services-modal js-services-modal">
+                        <div class="services-modal-content">
+                            <i class="bx bx-x services-modal-close js-services-modal-close"></i>
+                            <h2 class="services-modal-title">Thiết Kế Giao Diện Web</h2>
+                            <p class="services-modal-description">Với kinh nghiệm hơn 6 tháng trong lĩnh vực thiết kế đồ họa dành cho web tôi có thể.</p>
+                            <ul class="services-modal-list">
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Thiết kế giao diện web theo yêu cầu của khách hàng.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Thiết kế giao diện trực quan dễ nhìn.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Thiết kế bố cục màu sắc theo ý muốn của khách hàng.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Bàn giao lại file và các sản phẩm theo yêu cầu của khách hàng.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Thiết kế mockups website cho công ty (tương lai gần).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div data-index="3" class="services-modal js-services-modal">
+                        <div class="services-modal-content">
+                            <i class="bx bx-x services-modal-close js-services-modal-close"></i>
+                            <h2 class="services-modal-title">Hack Facebook</h2>
+                            <p class="services-modal-description">Với kinh nghiệm từ thời trẻ trâu đến bây giờ tôi có thể</p>
+                            <ul class="services-modal-list">
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Hack facebook người yêu cũ.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Hack được những facebook có bảo mật tầm trung.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Đăng bài lung tung vào facebook của người khác theo ý khách hàng.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Bàn giao lại facebook người khác cho khách hàng yêu cầu.
+                                </li>
+                                <li>
+                                    <i class="bx bx-check"></i>
+                                    Và tôi chỉ đang chém gió
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- product -->
+                <section id="product" class="product grid wide">
+                    <span class="section__subtitle testimonialInner.style.leftjs-show-on-scroll fade-in-down">My Portfolio</span>
+                    <h2 class="section__title js-show-on-scroll fade-in-down">Sản Phẩm Nổi Bật</h2>
+                    <div class="product-filters js-show-on-scroll zoom-in">
+                        <div data-filter="product-software" class="product-item js-product-item active">Software</div>
+                        <div data-filter="product-web" class="product-item js-product-item">Web</div>
+                        <div data-filter="product-behance" class="product-item js-product-item">Behance</div>
+                        <div data-filter="product-all" class="product-item js-product-item">All</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-card show js-product-card js-show-on-scroll zoom-in product-software">
+                            <img src="./assets/img/portfolio/work2.jpg" alt="">
+                            <h3>Thiết kế phần mềm</h3>
+                            <button onclick="showToast();" class="btn-text">Sản Phẩm
+                                <i class="bx bx-right-arrow-alt services__icon"></i>
+                            </button>
+                        </div>
+                        <div class="product-card show js-product-card js-show-on-scroll zoom-in product-software">
+                            <img src="./assets/img/portfolio/work4.jpg" alt="">
+                            <h3>Xây dựng Backend</h3>
+                            <button onclick="showToast();" class="btn-text">Sản Phẩm
+                                <i class="bx bx-right-arrow-alt services__icon"></i>
+                            </button>
+                        </div>        
+                        <div class="product-card js-product-card js-show-on-scroll zoom-in product-web">
+                            <img src="./assets/img/portfolio/1.jpg" alt="">
+                            <h3>Thết Kế web</h3>
+                            <button class="btn-text js-btn-show-box-product-web">Sản Phẩm
+                                <i class="bx bx-right-arrow-alt services__icon"></i>
+                            </button>
+                        </div>
+                        <div class="product-card js-product-card js-show-on-scroll zoom-in product-behance">
+                            <img src="./assets/img/portfolio/work3.jpg" alt="">
+                            <h3>Một Số Dự Án Nổi Bật Tại Behance</h3>
+                            <button onclick="showToast();" class="btn-text">Sản Phẩm
+                                <i class="bx bx-right-arrow-alt services__icon"></i>
+                            </button>
+                        </div>         
+                    </div>
+
+                    <div class="box-product-web js-box-product-web">
+                        <div class="container row grid wide">
+                            <i class='bx bx-x icon-close js-icon-close' ></i>
+                            <div class="col l-4 c-12">
+                                <div class="sidebar">
+                                    <div style="text-align: center;">
+                                        <img src="./assets/img/about/1bdd34789a7d5a23036c.jpg" alt="">
+                                        <h1>Nguyễn Đăng Duy</h1>
+                                        <h3>Graphic Designer</h3>
+                                        <h3>FrontEnd Developer</h3>
+                                        <span style="display: block">
+                                            <i class='bx bx-location-plus'></i>
+                                            Đà Nẵng, Việt Nam
+                                        </span>
+                                        <button onclick="showToast('warning', 'Đang ở trang chủ mà!', 3000)" href="./index.html" class="btn">
+                                            <i class='bx bxs-home-alt-2' ></i>
+                                            Trang chủ</button>
+                                        <button onclick="showToast('error', 'Mình chưa có sài mạng xã hội này!', 3000)" class="btn">
+                                            <i class='bx bxl-behance' ></i>
+                                            Behance
+                                        </button>
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100066340331597" class="btn">
+                                            <i class='bx bxl-facebook-circle' ></i>
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="box-product-web-contact">
+                                        <h6>Liên lạc</h6>
+                                        <p>Email: d0763705638@gmail.com</p>
+                                        <p>SDT: 0763705638</p>
+                                        <p>Zalo: 0763705638</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-8 c-12">
+                                <div class="content">
+                                    <h1>Sản phẩm</h1>
+                                    <h2>Mình hơi lười úp sản phẩm các bạn thông cảm bạn nào cần ib mình!</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- customers -->
+                <section id="my-customers" class="my-customers grid wide">
+                    <span class="section__subtitle js-show-on-scroll fade-in-down">My clients say</span>
+                    <h2 class="section__title js-show-on-scroll fade-in-down">Lời Chứng Thực</h2>
+                    <div class="testimonial-container js-testimonial-container">
+                        <i class="fa-solid fa-caret-right next-testimonial js-next-testimonial"></i>
+                        <div class="testimonial-content js-testimonial-content">
+                            <div class="testimonial__card js-testimonial__card js-show-on-scroll zoom-in">
+                                <img src="./assets/img/testimonial/6.jpg" alt="">
+                                <div class="testimonial__name">Nguyễn Phương Linh</div>
+                                <p class="testimonial__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit maxime facere, suscipit Sed commodi vitae vel!</p>
+                            </div>
+                            <div class="testimonial__card js-testimonial__card js-show-on-scroll zoom-in">
+                                <img src="./assets/img/testimonial/2.jpg" alt="">
+                                <div class="testimonial__name">Phan Huỳnh Đức</div>
+                                <p class="testimonial__desc">Đăng Duy là một người có tâm và có tầm với công việc tôi rất khâm phục anh ấy</p>
+                            </div>            
+                            <div class="testimonial__card js-testimonial__card js-show-on-scroll zoom-in">
+                                <img src="./assets/img/testimonial/3.jpg" alt="">
+                                <div class="testimonial__name">Mã Phan Thành Đạt</div>
+                                <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid commodi accusamus expedita dolores. Ipsam, natus neque? Dolor libero quibusdam labore repudiandae fuga maiores quis, ut repellat ipsa, voluptas consectetur cupiditate.</p>
+                            </div>    
+                            <div class="testimonial__card js-testimonial__card js-show-on-scroll zoom-in">
+                                <img src="./assets/img/testimonial/3.jpg" alt="">
+                                <div class="testimonial__name">Phan Hoàng Phúc</div>
+                                <p class="testimonial__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit maxime facere, suscipit Sed commodi vitae vel!</p>
+                            </div> 
+                            <div class="testimonial__card js-testimonial__card js-show-on-scroll zoom-in">
+                                <img src="./assets/img/testimonial/6.jpg" alt="">
+                                <div class="testimonial__name">Nguyễn Thị Phương Linh</div>
+                                <p class="testimonial__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid commodi accusamus expedita dolores. Ipsam, natus neque? Dolor libero quibusdam labore repudiandae fuga maiores quis, ut repellat ipsa, voluptas consectetur cupiditate.</p>
+                            </div>
+                            <div class="testimonial__card js-testimonial__card js-show-on-scroll zoom-in">
+                                <img src="./assets/img/testimonial/1.webp" alt="">
+                                <div class="testimonial__name">Eimi fudaka</div>
+                                <p class="testimonial__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit maxime facere, suscipit Sed commodi vitae vel!</p>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-caret-left prev-testimonial js-prev-testimonial hide"></i>
+                    </div>
+                    <div class="dots">
+                        <span data-index="0" class="dot js-dot active"></span>
+                        <span data-index="1" class="dot js-dot"></span>
+                        <span data-index="2" class="dot js-dot"></span>
+                    </div>
+                </section>
+
+                <!-- contact -->
+                <section id="contact" class="contact grid wide">
+                    <span class="section__subtitle js-show-on-scroll fade-in-down">Liên Lạc</span>
+                    <h2 class="section__title js-show-on-scroll fade-in-down">Contact Me</h2>
+                    <div class="contact-container row">
+                        <div class="col l-6 m-6 js-show-on-scroll fade-in-left">
+                            <h3 class="contact__title">Kết Nối Với Tôi</h3>
+                            <div class="contact-card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3>Email</h3>
+                                <span>d0763705638@gmail.com</span>
+                                <a href="mailto:d0763705638@gmail.com" class="btn-text">Kết nối
+                                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                            <div class="contact-card">
+                                <i class="bx bxs-phone-call contact__card-icon"></i>
+                                <h3>Phone</h3>
+                                <span>0763705638</span>
+                                <a target="_blank" href="tel:+0763705638" class="btn-text">Kết nối
+                                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                            <div class="contact-card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3>Messenger</h3>
+                                <span>Duy Nguyễn</span>
+                                <a target="_blank" href="https://www.facebook.com/messages/t/100066340331597" class="btn-text">Kết nối
+                                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-6 js-show-on-scroll fade-in-right">
+                            <h3 class="contact__title">Để Lại Lời Nhắn</h3>
+                            <form action="#" id="form-1">
+                                <div class="form-field">
+                                    <input type="text" class="form-input" placeholder=" ">
+                                    <label for="name" class="form-lable">Tên của bạn</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="text" class="form-input" placeholder=" ">
+                                    <label for="name" class="form-lable">Địa chỉ Email</label>
+                                </div>
+                                <div class="form-field">
+                                    <textarea placeholder="Vui lòng để lại lời nhắn" name="" id="" cols="30" rows="12"></textarea>
+                                </div>
+                                <button onclick="showToast('warning', 'Tính năng sẽ được admin cập nhập trong thời gian tới!', 4000)" class="btn btn--primary-color">Gửi tin nhắn</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h3 class="footer-title">Duy</h3>
+            <div class="footer-list">
+                <a href="#home">Trang chủ</a>
+                <a href="#about">Giới thiệu</a>
+                <a href="#product">Sản phẩm</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-behance"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-youtube"></i>
+                </a>
+            </div>
+            <p>
+                © Nguyễn Đăng Duy. All rights reserved
+            </p>
+        </footer>
+
+
+        <div id="toasts"></div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".js-home__name-auto-input", {
+            strings: ['Nguyễn Đăng Duy', 'Web Developer', 'UI Designer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        })
+    </script>
+    <script src="./js/toast.js"></script>
+    <script>
+        const aElements = document.querySelectorAll('.no-next-page');
+        aElements.forEach(aElement => aElement.addEventListener('click', (e) => {
+            e.preventDefault();
+        }))
+        function showToast(type, message, duration) {
+            Toast({
+                type: type || 'warning',
+                message: message || 'Mình chỉ mới học về web bạn có thể chọn mục web để xem sản phẩm của mình',
+                duration: duration || 4000,
+            })
+        }
+    </script>
+    <script>
+        const form = document.getElementById('form-1');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+        })
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

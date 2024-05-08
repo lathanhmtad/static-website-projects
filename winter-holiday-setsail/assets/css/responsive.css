@@ -1,0 +1,345 @@
+/* PC */
+@media (min-width: 1025px) {
+    .nav__mobile-menu {
+        display: none;
+    }
+
+    .nav__logo-img-mobile {
+        display: none;
+    }
+
+    .nav-item__icon--arrow-right {
+        display: none;
+    }
+
+    .nav__user {
+        align-self: center;
+        font-size: 2.1rem;
+        cursor: pointer;
+        transition-duration: 0.4s;
+    }
+
+    .nav__user:hover {
+        color: var(--primary-color);
+    }
+
+    .modal {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+    .mt-46-c-m {
+        margin-top: 46px;
+    }
+
+    .underline-effect::after {
+        display: none;
+    }
+
+    .header {
+        height: var(--height-header-size-m);
+        background-color: var(--primary-color);
+    }
+
+    .nav {
+        height: var(--height-header-size-m);
+        position: relative;
+        display: block;
+        padding: 0;
+    }
+
+    .nav__logo {
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav__logo .nav__logo-img {
+        display: none;
+    }
+
+    .nav__logo .nav__logo-img-mobile {
+        height: 36px;
+        vertical-align: middle;
+    }
+
+    .nav__mobile-menu {
+        color: var(--white-color);
+        font-size: 2rem;
+        line-height: var(--height-header-size-m);
+        padding-left: 32px;
+    }
+
+    /* display */
+    .nav__mobile-menu--toggle:checked ~ .nav-list {
+        display: block;
+        animation: fadeIn linear 0.4s;
+    }
+
+    /* nav */
+    .nav-list * {
+        position: unset;
+    }
+
+    .nav-list {
+        display: none;
+        background-color: var(--white-color);
+        height: 400px;
+        overflow-y: auto;
+    }
+
+    .nav-list * {
+        position: unset;
+    }
+
+    .nav-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-item {
+        position: relative;
+        display: block;
+    }
+
+    .nav-item:hover .nav-item__icon--arrow-right {
+        color: var(--primary-color);
+        transform: translateY(140%) rotateZ(90deg);
+    }
+
+    .nav-item__icon--arrow-right {
+        position: absolute;
+        right: 32px;
+        transform: translateY(140%);
+        font-size: 1.4rem;
+        transition-duration: 0.4s;
+        z-index: 1;
+    }
+
+    .nav-item__link {
+        position: relative;
+        padding: 16px 0 16px 60px;
+    }
+
+    .nav-item:hover > .subnav {
+        display: block;
+        animation: fadeIn linear 0.4s;
+    }
+
+    .subnav {
+        padding: 0 0 0 64px;
+        display: none;
+    }
+
+    .subnav-item__link {
+        position: relative;
+        padding: 14px 25px 14px 32px
+    }
+
+    .subnav--size-l {
+        padding: 0;
+    }
+
+    .subnav--size-l .heading {
+        margin: 16px 0 0px;
+    }
+
+    .subnav.subnav--child {
+        padding: 0;
+        width: 100%;
+        transform: translateX(32%);
+    }
+
+    .subnav.subnav--child .subnav__item {
+        width: auto;
+    }
+ 
+    .subnav__item {
+        height: auto;
+    }
+
+    .subnav__link {
+        padding: 14px 25px 14px 32px;
+    }
+
+    /* nav user */
+    .nav__user {
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav__user-icon {
+        font-size: 2.2rem;
+        color: var(--white-color);
+    }
+
+    .nav__tools {
+        display: none;
+    }
+    
+    /* slider */
+    .slider {
+        background: url(../img/slider/slider.jpg) no-repeat top center / cover;
+        padding-top: 60%;
+        margin-top: var(--height-header-size-m);
+    }
+
+    .slider__img {
+        display: none;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+    .hidden-in-tablet {
+        display: none;
+    }
+
+    .preview iframe {
+        width: 80%;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: auto;
+        padding: 46px 8px;
+    }
+
+    .card__evaluate {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .winter-holiday__place {
+
+    }
+
+    .winter-holiday__place-heading {
+        padding: 8px 0;
+    }
+
+    .winter-resort__place {
+        padding: 0 8px;
+    }
+    
+    .destination-featured {
+        top: 15%;
+        transform: translate(0, 0);
+    }
+
+    .footer {
+        padding: 89px 110px 0px;;
+    }
+
+    .footer__container {
+        padding-bottom: 46px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hidden-in-mobile {
+        display: none;
+    }
+
+    .mt-46-c {
+        margin-top: 46px;
+    }
+
+    .mt-16-c {
+        margin-top: 16px;
+    }
+
+    .text-common {
+        padding: 0 16px;
+    }
+
+    .nav-item__link {
+        padding: 16px 0 16px 32px;
+    }
+
+    .subnav  {
+        padding: 0 0 0 32px;
+    }
+
+    .subnav--size-l {
+        padding: 0 0 0 60px;
+
+    }
+
+    .slider__title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .slider__heading {
+        font-size: 2.8rem;
+        line-height: 5rem;
+    }
+
+    .slider__desc {
+        margin-top: 0;
+        font-size: 1.3rem;
+        padding: 0 20px;
+    }
+
+    .small-title {
+        font-size: 3rem;
+    }
+
+    .big-title {
+        font-size: 3.5rem;
+    }
+
+    .top-reviews__content-heading {
+        line-height: 1.2;
+    }
+
+    .winter-resort {
+        padding: 0 8px 170px;
+    }
+
+    .destination-featured {
+        top: 54%;
+    }
+
+    .footer {
+        padding: 80px 16px 0px;
+    }
+
+    .footer__container {
+        padding-bottom: 32px;
+    }
+
+    .footer-item {
+        margin: 8px 0;
+    }
+
+    .footer-item__desc {
+        margin-bottom: 32px;
+    }
+
+    .footer-item__heading {
+        margin: 32px 0 0 0;
+    }
+
+    .footer-item__link--time {
+        margin: 6px 0 24px;
+    }
+
+    .footer__copyright {
+        padding: 0 0 24px 0;
+    }
+
+    .back-in-top {
+        right: 0;
+        bottom: 50px;
+        padding: 12px;
+    }
+}

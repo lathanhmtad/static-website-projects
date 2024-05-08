@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/toasts.css">
+</head>     
+<body>
+    <div class="app">
+        <section class="sidebar">
+            <ul class="sidebar__user">
+                <img src="./assets/imgs/avatar/user.png" alt="">
+                <h6 class="sidebar__user-name">Thomas</h6>
+                <i class="fa-solid fa-angle-down"></i>
+            </ul>
+
+            <ul class="sidebar__menu sidebar__nav">
+                <li style="color: var(--text-color); font-size: 1.3rem; cursor: default;">Menu</li>
+                <li class="active">
+                    <a href="#"> 
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        Discover
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-circle-right"></i>
+                        </div>
+                        Trending
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        Streaming
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        Playlist
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        Bookmark
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__category sidebar__nav">
+                <li style="color: var(--text-color); font-size: 1.3rem;">Category</li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        Live Stream
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        Tutorial
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        Completition
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="wrapper-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        Community
+                    </a>
+                </li>
+            </ul>
+
+            <div style="border-top: 1px solid var(--border-color); margin: 16px 0;"></div>
+
+            <div class="switch active"></div>
+        </section>
+    
+        <section class="content">
+            <div class="discover">
+                <h1>Discover</h1>
+                <h3>RECENTY PLAYER</h3>
+                <div class="gallery">
+                    <div class="control prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="gallery__list">
+                        <!-- gallery__item -->
+                    </div>
+                    <div class="control next-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row outstanding">
+                <div class="col l-8">
+                    <h2 class="outstanding__title">Most popular</h2>
+                    <div class="most-popular">
+                        <div class="header">
+                            <h4 class="id">ID</h4>
+                            <h4 class="album" style="width: 300px;">ALBUM</h4>
+                            <h4 class="music__time">TIME</h4>
+                        </div>
+                        <div class="body play-list">
+                            <!-- play-item -->
+                        </div>           
+                    </div>
+                </div>
+    
+                <div class="col l-4">
+                    <h2 class="outstanding__title">Top single</h2>
+                    <div class="top-singer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Điều khiển chính -->
+        <div class="controls row">
+            <div class="col l-3">
+                <div class="media player-controls-left"></div>
+            </div>
+            <div class="col l-6">
+                <div class="player-controls player-controls-center">
+                    <div class="player-controls-btn">
+                        <div class="btn btn-repeat">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                            <i class="fas fa-step-backward"></i>
+                        </div>
+                        <div class="btn btn-toggle-play">
+                            <i class="fas fa-pause icon-pause"></i>
+                            <i class="fas fa-play icon-play"></i>
+                        </div> 
+                        <div class="btn btn-next">
+                            <i class="fas fa-step-forward"></i>
+                        </div>
+                        <div class="btn btn-random">
+                            <i class="fas fa-random"></i>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="time-start">00:00</div>
+                        <input type="range" class="progress" value="0" step="0.1" min="0" max="100">
+                        <div class="time-right">04:05</div>
+                    </div>
+                    <audio class="audio" src=""></audio>    
+                </div>
+            </div>
+            <div class="col l-3">
+                <div class="player-controls-right">
+                    <div class="player-volume">
+                        <i class='bx bxs-volume-full player-volume-icon' ></i>
+                        <input type="range" class="progress-volume" value="100" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toasts">
+        <div class="toast">
+            
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script>
+        function Toasts() {
+
+        }
+    </script>
+</body>
+</html>
